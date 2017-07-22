@@ -1,0 +1,5 @@
+bin\Debug\享元模式.exe
+bin\Debug\享元模式.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\享元模式.exe
+obj\Debug\享元模式.pdb

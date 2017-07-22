@@ -1,0 +1,10 @@
+E:\dotnet\创业时开发\Win程序2005\设计模式\09组合模式\组合模式-公司管理\组合模式\obj\Debug\组合模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\09组合模式\组合模式-公司管理\组合模式\obj\Debug\组合模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\09组合模式\组合模式-公司管理\组合模式\bin\Debug\组合模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\09组合模式\组合模式-公司管理\组合模式\bin\Debug\组合模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\09组合模式\组合模式-公司管理\组合模式\obj\Debug\ResolveAssemblyReference.cache
+E:\document\模式\源代码\19组合模式\组合模式-公司管理\组合模式\obj\Debug\组合模式.exe
+E:\document\模式\源代码\19组合模式\组合模式-公司管理\组合模式\obj\Debug\组合模式.pdb
+E:\document\模式\源代码\19组合模式\组合模式-公司管理\组合模式\bin\Debug\组合模式.exe
+E:\document\模式\源代码\19组合模式\组合模式-公司管理\组合模式\bin\Debug\组合模式.pdb
+E:\document\模式\源代码\19组合模式\组合模式-公司管理\组合模式\obj\Debug\ResolveAssemblyReference.cache

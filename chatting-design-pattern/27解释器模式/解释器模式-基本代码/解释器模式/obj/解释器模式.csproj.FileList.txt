@@ -1,0 +1,5 @@
+bin\Debug\解释器模式.exe
+bin\Debug\解释器模式.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\解释器模式.exe
+obj\Debug\解释器模式.pdb

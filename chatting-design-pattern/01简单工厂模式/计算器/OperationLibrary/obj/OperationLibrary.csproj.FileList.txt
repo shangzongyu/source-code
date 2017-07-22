@@ -1,0 +1,5 @@
+bin\Debug\OperationLibrary.dll
+bin\Debug\OperationLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\OperationLibrary.dll
+obj\Debug\OperationLibrary.pdb

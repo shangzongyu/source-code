@@ -1,0 +1,8 @@
+bin\Debug\商场管理软件.exe
+bin\Debug\商场管理软件.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\商场管理软件.Form1.resources
+obj\Debug\商场管理软件.Properties.Resources.resources
+obj\Debug\商场管理软件.csproj.GenerateResource.Cache
+obj\Debug\商场管理软件.exe
+obj\Debug\商场管理软件.pdb

@@ -1,0 +1,5 @@
+bin\Debug\单例模式.exe
+bin\Debug\单例模式.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\单例模式.exe
+obj\Debug\单例模式.pdb

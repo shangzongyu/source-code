@@ -1,0 +1,5 @@
+E:\dotnet\创业时开发\Win程序2005\设计模式\08桥接模式\桥接模式-手机03\桥接模式\obj\Debug\桥接模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\08桥接模式\桥接模式-手机03\桥接模式\obj\Debug\桥接模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\08桥接模式\桥接模式-手机03\桥接模式\bin\Debug\桥接模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\08桥接模式\桥接模式-手机03\桥接模式\bin\Debug\桥接模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\08桥接模式\桥接模式-手机03\桥接模式\obj\Debug\ResolveAssemblyReference.cache

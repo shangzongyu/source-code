@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\中介者模式.exe
+bin\Debug\中介者模式.pdb
+obj\Debug\中介者模式.exe
+obj\Debug\中介者模式.pdb

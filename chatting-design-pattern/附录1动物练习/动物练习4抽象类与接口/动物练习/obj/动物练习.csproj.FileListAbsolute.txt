@@ -1,0 +1,8 @@
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\obj\Debug\动物练习.exe
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\obj\Debug\动物练习.pdb
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\bin\Debug\动物练习.exe
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\bin\Debug\动物练习.pdb
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\obj\Debug\ResolveAssemblyReference.cache
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\obj\Debug\动物练习.Form1.resources
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\obj\Debug\动物练习.Properties.Resources.resources
+E:\document\模式\源代码\附录1动物练习\动物练习4抽象类与接口\动物练习\obj\Debug\动物练习.csproj.GenerateResource.Cache

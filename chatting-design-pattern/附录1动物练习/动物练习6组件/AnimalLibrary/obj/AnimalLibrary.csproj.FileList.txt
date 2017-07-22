@@ -1,0 +1,5 @@
+bin\Debug\AnimalLibrary.dll
+bin\Debug\AnimalLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\AnimalLibrary.dll
+obj\Debug\AnimalLibrary.pdb

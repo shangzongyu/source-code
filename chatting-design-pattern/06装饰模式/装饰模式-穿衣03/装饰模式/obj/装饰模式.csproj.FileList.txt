@@ -1,0 +1,5 @@
+obj\Debug\ResolveAssemblyReference.cache
+bin\Debug\装饰模式.exe
+bin\Debug\装饰模式.pdb
+obj\Debug\装饰模式.exe
+obj\Debug\装饰模式.pdb
