@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "binary_tree_header", "binary_tree_header.vcxproj", "{ACE49E9A-EA19-4E05-89E8-D36A26170BC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACE49E9A-EA19-4E05-89E8-D36A26170BC1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ACE49E9A-EA19-4E05-89E8-D36A26170BC1}.Debug|Win32.Build.0 = Debug|Win32
+		{ACE49E9A-EA19-4E05-89E8-D36A26170BC1}.Release|Win32.ActiveCfg = Release|Win32
+		{ACE49E9A-EA19-4E05-89E8-D36A26170BC1}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

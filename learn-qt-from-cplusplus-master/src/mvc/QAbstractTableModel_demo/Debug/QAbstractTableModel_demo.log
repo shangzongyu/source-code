@@ -1,0 +1,34 @@
+﻿生成启动时间为 2012-4-25 11:06:52。
+     1>项目“z:\examples\mvc\QAbstractTableModel_demo\QAbstractTableModel_demo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\QAbstractTableModel_demo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     1>RCC : warning : No resources in 'z:\examples\mvc\QAbstractTableModel_demo\qabstracttablemodel_demo.qrc'.
+         
+         Uic'ing qabstracttablemodel_demo.ui...
+         Moc'ing TableModel.h...
+         Rcc'ing qabstracttablemodel_demo.qrc...
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui /I.\ /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_TableModel.cpp main.cpp TableModel.cpp
+         moc_TableModel.cpp
+         main.cpp
+         TableModel.cpp
+         正在生成代码...
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui /I.\ /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_qabstracttablemodel_demo.cpp
+         qrc_qabstracttablemodel_demo.cpp
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"z:\examples\mvc\QAbstractTableModel_demo\\QAbstractTableModel_demo.exe" /NOLOGO /LIBPATH:D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\QAbstractTableModel_demo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"z:\examples\mvc\QAbstractTableModel_demo\QAbstractTableModel_demo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"z:\examples\mvc\QAbstractTableModel_demo\QAbstractTableModel_demo.lib" /MACHINE:X86 Debug\moc_TableModel.obj
+         Debug\qrc_qabstracttablemodel_demo.obj
+         Debug\main.obj
+         Debug\TableModel.obj
+     1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“qtmaind.lib(qtmain_win.obj)”或在“z:\examples\mvc\QAbstractTableModel_demo\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         QAbstractTableModel_demo.vcxproj -> z:\examples\mvc\QAbstractTableModel_demo\QAbstractTableModel_demo.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"z:\examples\mvc\QAbstractTableModel_demo\\QAbstractTableModel_demo.exe;#1" /manifest Debug\QAbstractTableModel_demo.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\QAbstractTableModel_demo.unsuccessfulbuild”。
+         正在对“Debug\QAbstractTableModel_demo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“z:\examples\mvc\QAbstractTableModel_demo\QAbstractTableModel_demo.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:07.45

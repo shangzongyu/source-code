@@ -1,0 +1,33 @@
+﻿生成启动时间为 2012-4-25 11:01:47。
+     1>项目“z:\examples\mvc\item_roles\item_roles.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“Debug\item_roles.unsuccessfulbuild”执行 Touch 任务。
+       CustomBuild:
+         Uic'ing item_roles.ui...
+         Moc'ing NewsDialog.h...
+         Rcc'ing item_roles.qrc...
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui /I.\ /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_NewsDialog.cpp main.cpp NewsDialog.cpp
+         moc_NewsDialog.cpp
+         main.cpp
+         NewsDialog.cpp
+         正在生成代码...
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui /I.\ /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_item_roles.cpp
+         qrc_item_roles.cpp
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"z:\examples\mvc\item_roles\\item_roles.exe" /NOLOGO /LIBPATH:D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\item_roles.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"z:\examples\mvc\item_roles\item_roles.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"z:\examples\mvc\item_roles\item_roles.lib" /MACHINE:X86 Debug\moc_NewsDialog.obj
+         Debug\qrc_item_roles.obj
+         Debug\main.obj
+         Debug\NewsDialog.obj
+     1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“qtmaind.lib(qtmain_win.obj)”或在“z:\examples\mvc\item_roles\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         item_roles.vcxproj -> z:\examples\mvc\item_roles\item_roles.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"z:\examples\mvc\item_roles\\item_roles.exe;#1" /manifest Debug\item_roles.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\item_roles.unsuccessfulbuild”。
+         正在对“Debug\item_roles.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“z:\examples\mvc\item_roles\item_roles.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:19.46

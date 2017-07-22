@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="QAbstractListModel_demo">
+    </qresource>
+</RCC>

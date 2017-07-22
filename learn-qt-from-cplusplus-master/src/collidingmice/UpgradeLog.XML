@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="collidingmice">
+</Property><Property Name="解决方案文件" Value="Z:\examples\collidingmice\collidingmice.sln">
+</Property><Property Name="Date" Value="2012年4月24日">
+</Property><Property Name="Time" Value="19:36">
+</Property></Properties><Event ErrorLevel="0" Project="collidingmice" Source="collidingmice.vcproj" Description="Converting project file 'Z:\examples\collidingmice\collidingmice.vcproj'.">
+</Event><Event ErrorLevel="1" Project="collidingmice" Source="collidingmice.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="collidingmice" Source="collidingmice.vcproj" Description="MSB8012: $(TargetPath) ('Z:\examples\collidingmice\.\collidingmice.exe') does not match the Linker's OutputFile property value 'debug\collidingmice.exe' ('Z:\examples\collidingmice\debug\collidingmice.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="collidingmice" Source="collidingmice.vcproj" Description="MSB8012: $(TargetPath) ('Z:\examples\collidingmice\.\collidingmice.exe') does not match the Linker's OutputFile property value 'release\collidingmice.exe' ('Z:\examples\collidingmice\release\collidingmice.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="collidingmice" Source="collidingmice.vcproj" Description="Done converting to new project file 'Z:\examples\collidingmice\collidingmice.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="collidingmice" Source="collidingmice.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="collidingmice.sln" Description="解决方案文件不需要转换。">
+</Event><Event ErrorLevel="3" Project="" Source="collidingmice.sln" Description="无需转换">
+</Event></UpgradeLog>

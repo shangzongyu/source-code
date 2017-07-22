@@ -1,0 +1,34 @@
+﻿生成启动时间为 2012-4-24 20:26:11。
+     1>项目“z:\examples\introspect_qobject\introspect_qobject.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\introspect_qobject.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+     1>RCC : warning : No resources in 'z:\examples\introspect_qobject\introspect_qobject.qrc'.
+         
+         Moc'ing introspect_qobject.h...
+         Uic'ing introspect_qobject.ui...
+         Rcc'ing introspect_qobject.qrc...
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui /I.\ /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\Debug\moc_introspect_qobject.cpp introspect_qobject.cpp main.cpp
+         moc_introspect_qobject.cpp
+         introspect_qobject.cpp
+         main.cpp
+         正在生成代码...
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtGui /I.\ /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_introspect_qobject.cpp
+         qrc_introspect_qobject.cpp
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"z:\examples\introspect_qobject\\introspect_qobject.exe" /NOLOGO /LIBPATH:D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib qtmaind.lib QtCored4.lib QtGuid4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\introspect_qobject.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"z:\examples\introspect_qobject\introspect_qobject.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"z:\examples\introspect_qobject\introspect_qobject.lib" /MACHINE:X86 Debug\moc_introspect_qobject.obj
+         Debug\qrc_introspect_qobject.obj
+         Debug\introspect_qobject.obj
+         Debug\main.obj
+     1>qtmaind.lib(qtmain_win.obj) : warning LNK4099: 未找到 PDB“vc100.pdb”(使用“qtmaind.lib(qtmain_win.obj)”或在“z:\examples\introspect_qobject\vc100.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+         introspect_qobject.vcxproj -> z:\examples\introspect_qobject\introspect_qobject.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"z:\examples\introspect_qobject\\introspect_qobject.exe;#1" /manifest Debug\introspect_qobject.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\introspect_qobject.unsuccessfulbuild”。
+         正在对“Debug\introspect_qobject.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“z:\examples\introspect_qobject\introspect_qobject.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:13.42

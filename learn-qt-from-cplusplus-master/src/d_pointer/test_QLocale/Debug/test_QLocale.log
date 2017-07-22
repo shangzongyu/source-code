@@ -1,0 +1,14 @@
+﻿生成启动时间为 2012-4-25 11:36:06。
+     1>项目“z:\examples\d_pointer\test_QLocale\test_QLocale.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\test_QLocale.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(25): error C2039: “test_data”: 不是“QLocale”的成员
+                 D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore/qlocale.h(132) : 参见“QLocale”的声明
+     1>已完成生成项目“z:\examples\d_pointer\test_QLocale\test_QLocale.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:02.50
