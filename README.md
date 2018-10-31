@@ -26,6 +26,7 @@
 - [《高性能 Linux 编程》](./high-performance-linux)
 - [《Linux/Unix 系统编程手册》](./TLPI)
 - [《inux程序设计》](./beginning-linux-programming-4th-edition)
+- [《Linux Device Drivers 3》](./ldd3)
 
 ## 云计算
 
