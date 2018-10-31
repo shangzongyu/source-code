@@ -1,0 +1,13 @@
+#!/bin/bash
+
+until who | grep "$1" > /dev/null
+do
+  sleep 60
+done
+
+# Now ring the bell and announce the unexpected user.
+
+echo -e '\a'
+echo "***** $1 has just logged in *****"
+
+exit 0

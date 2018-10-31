@@ -1,0 +1,26 @@
+Chapter 11  -  Processes and Signals.
+
+
+system1.c   -  A program that calls another program using the system command.
+
+system2.c   -  system1.c revised so that the other program is run in the background.
+
+pexec.c    -  A program that replaces a process image using the execlp command.
+
+fork1.c     -  A program that duplicates a process image using the fork command.
+
+wait.c     -  A program that uses the wait command to wait for a child process to finish.
+
+fork2.c    -  fork1.c changed so thata zombie process is created.
+
+upper.c    -  A simple program to convert all characters to upper case.
+
+file.txt   -  A short text file for use with upper.c.
+
+useupper.c -  A program that demonstrates that open file descriptors are preserved across a call to execl.
+
+ctrlc1.c    -  A simple signal handling program which reacts to SIGINT.
+
+alarm.c    -  A program which sends a signal to itself.
+
+ctrlc2.c   -  A signal handling progam that uses sigaction rather than signal.

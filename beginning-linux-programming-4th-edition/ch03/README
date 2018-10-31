@@ -1,0 +1,19 @@
+Chapter 3 - Working with Files.
+
+
+simple_write.c  -  A simple program that uses write.
+
+simple_read.c  -  A simple program that uses read and write.
+
+copy_system.c  - A program that uses low-level system calls to copy one file to another.
+
+copy_block.c  -  An improved version of system.c that copies blocks of data between the files.
+
+copy_stdio.c  -  A program uses library calls to further improve the speed of the above programs by buffering
+the file input and output.
+
+printdir.c  -  A program that prints out the contents of the home directory.
+
+printdir2.c  -  An improved version of printdir.c that takes the directory as an argument.
+
+mmap.c  - A program that maps a file into memory as an array and then alters its contents.

@@ -1,0 +1,55 @@
+Chapter 7  -  Data Management.
+
+To compile, just type 'make'.
+On some distributions you may need to link the gdbm compatability
+routines. The Makefile's have a comment showing you what needs
+to be changed.
+
+memory1.c -  A simple memory allocation program that uses the function malloc.
+
+memory2.c -  A program that allocates 16 Megabytes of memory.
+
+memory3.c -  A program that allocates all of the machine's memory.
+
+memory4.c -  A program that abuses the memory causing a segmentation fault.
+
+memory5a.c, memory5b.c  -  Two programs that attempt to access a null pointer causing a segmentation fault.
+
+memory6.c  -  A program that allocates and then frees memory using the function free.
+
+lock1.c   -  A program that creates a lock file using the funciton open.
+
+lock2.c   -  A program that creates cooperative lock files.
+
+lock3.c   -  A program that creates different types of locks using the function fnctl.
+
+lock4.c   -  A program that tests the locks on a file.
+
+lock5.c   -  A program that creates competing locks.
+
+
+The programs below may need to be compiled with one of the commands, if the default Makefile does not succeed.
+
+cc -o XXXX XXXX.c -lgdbm
+cc -o XXXX XXXX.c -I/usr/local/include -L/usr/local/lib -ldbm
+cc -o XXXX XXXX.c -I/usr/local/include/gdbm -L/usr/local/lib -lgdbm
+
+dbm1.c    -  A simple database program.
+
+dbm2.c    -  An improved database program.
+
+
+CD Application.
+
+app/makefile  -  The application's makefile. (See Chapter 8.)
+
+app/cd_data.h   -  The header file for the following files.
+
+app/app_ui.c    -  The application's user interface.
+
+app/cd_access.c -  The dbm side of the application.
+
+To compile the application:
+$ make 
+
+

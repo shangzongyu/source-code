@@ -1,0 +1,22 @@
+Chapter 5  -  Terminals.
+
+menu1.c      -  A simple menu routine.
+
+menu2.c      -  A version of menu1.c that checks for output redirection.
+
+menu3.c      -  A version of menu2.c that uses the /dev/tty file for input and output.
+
+password.c   -  A program that doesn't echo input from the user to the screen.
+
+menu4.c      -  An improved menu entry program with character control.
+
+The programs below may require the compile command:
+cc -o xxxx xxxx.c -I/usr/include/ncurses -lncurses
+
+badterm.c    -  A program that set sup terminal types wrongly.
+
+sizeterm.c   -  A program that prints the terminal size.
+
+menu5.c      -  A program that gives the user total terminal control.
+
+kbhit.c      -  A program that detects which key the user hits (a la MS_DOS).
