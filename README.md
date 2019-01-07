@@ -10,10 +10,9 @@
 
 ## 操作系统
 
-- [《一个操作系统的实现》](./an-oragne-os-implementation)
-- [《30天自制操作系统》](./30-days-make-operate-os)
+- [《一个操作系统的实现》](an-oragne-os-implementation)
+- [《30天自制操作系统》](30-days-make-operate-os)
 - [《x86 汇编语言：从实模式到保护模式》](x86-assemble-from-real-mode-to-protect-mode)
-- []
 
 ## 网络
 
@@ -36,3 +35,4 @@
 
 - [《大话设计模式》](./chatting-design-pattern)
 - [《C++ API设计》](./cpp-api-design)
+- [Java核心编程第10版](./corejava10) - 官方提提供下载地址:<http://horstmann.com/corejava/>
