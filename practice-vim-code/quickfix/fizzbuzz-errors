@@ -1,0 +1,11 @@
+fizzbuzz.js, line 2, character 22: Unexpected '++'.
+for (i=1; i <= 100; i++) {
+fizzbuzz.js, line 3, character 15: Expected '===' and instead saw '=='.
+if(i % 15 == 0) {
+fizzbuzz.js, line 5, character 21: Expected '===' and instead saw '=='.
+} else if(i % 5 == 0) {
+fizzbuzz.js, line 7, character 21: Expected '===' and instead saw '=='.
+} else if(i % 3 == 0) {
+fizzbuzz.js, line 12, character 2: Unexpected ';'.
+};
+5 errors

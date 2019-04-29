@@ -7,6 +7,7 @@
   - [网络](#%E7%BD%91%E7%BB%9C)
   - [Linux/Unix](#linuxunix)
   - [云计算](#%E4%BA%91%E8%AE%A1%E7%AE%97)
+  - [编辑器](#编辑器)
   - [其他](#%E5%85%B6%E4%BB%96)
 
 ## 操作系统
@@ -25,12 +26,16 @@
 - [《UNIX 网络编程 UNP - 第三版》](./unpv13e)
 - [《高性能 Linux 编程》](./high-performance-linux)
 - [《Linux/Unix 系统编程手册》](./TLPI)
-- [《Linux程序设计》](./beginning-linux-programming-4th-edition)
+- [《Linux 程序设计》](./beginning-linux-programming-4th-edition)
 - [《Linux Device Drivers 3》](./ldd3)
 
 ## 云计算
 
-- [《自己动手写docker》](./mydocker-master)
+- [《自己动手写 docker》](./mydocker-master)
+
+## 编辑器
+
+- [《Vim实用技巧 - 第一版》][./practice-vim-code]
 
 ## 其他
 

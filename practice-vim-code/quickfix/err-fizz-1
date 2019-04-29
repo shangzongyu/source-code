@@ -1,0 +1,5 @@
+fizzbuzz.js, line 2, character 22: Unexpected '++'.
+fizzbuzz.js, line 3, character 15: Expected '===' and instead saw '=='.
+fizzbuzz.js, line 5, character 21: Expected '===' and instead saw '=='.
+fizzbuzz.js, line 7, character 21: Expected '===' and instead saw '=='.
+fizzbuzz.js, line 12, character 2: Unexpected ';'.
