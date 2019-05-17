@@ -47,4 +47,4 @@
 - [《大话设计模式》](./chatting-design-pattern)
 - [《C++ API设计》](./cpp-api-design)
 - [《Java 核心编程第10版》](./corejava10) - 官方提提供[下载地址](http://horstmann.com/corejava/)
-- [《MySQL 必知必会》](./MySQL.Crash.Course)
+- [《MySQL 必知必会》](./MySQL.Crash.Course) - 官方提供[下载地址](https://forta.com/books/0672327120/)
