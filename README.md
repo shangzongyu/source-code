@@ -20,6 +20,14 @@
 ## 存储
 
 - [《Redis In Action》](./redis-in-action),  - 官方提提供下载地址 <https://www.manning.com/books/redis-in-action>
+- [《MySQL技术内幕：SQL编程》](./MySQL技术内幕：SQL编程)
+- [《MySQL 必知必会》](./MySQL.Crash.Course) - 官方提供[下载地址](https://forta.com/books/0672327120/)
+
+## 编程语言
+
+- [《C++ API设计》](./cpp-api-design)
+- [《Java 核心编程第10版》](./corejava10) - 官方提提供[下载地址](http://horstmann.com/corejava/)
+- [《自己动手实现Lua》](./luago-book)
 
 ## 网络
 
@@ -33,6 +41,8 @@
 - [《Linux/Unix 系统编程手册》](./TLPI)
 - [《Linux 程序设计》](./beginning-linux-programming-4th-edition)
 - [《Linux Device Drivers 3》](./ldd3)
+- [《Linux 内核 0.11 完全注释》](./linux-kernel-0.11)
+- [《Linux 内核 0.12 完全注释》](./linux-kernel-0.12)
 
 ## 云计算
 
@@ -45,6 +55,3 @@
 ## 其他
 
 - [《大话设计模式》](./chatting-design-pattern)
-- [《C++ API设计》](./cpp-api-design)
-- [《Java 核心编程第10版》](./corejava10) - 官方提提供[下载地址](http://horstmann.com/corejava/)
-- [《MySQL 必知必会》](./MySQL.Crash.Course) - 官方提供[下载地址](https://forta.com/books/0672327120/)
