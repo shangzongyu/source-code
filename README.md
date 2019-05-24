@@ -7,6 +7,7 @@
   - [存储](#%E5%AD%98%E5%82%A8)
   - [网络](#%E7%BD%91%E7%BB%9C)
   - [Linux/Unix](#linuxunix)
+  - [Windows](#windows)
   - [云计算](#%E4%BA%91%E8%AE%A1%E7%AE%97)
   - [编辑器](#编辑器)
   - [其他](#%E5%85%B6%E4%BB%96)
@@ -43,6 +44,10 @@
 - [《Linux Device Drivers 3》](./ldd3)
 - [《Linux 内核 0.11 完全注释》](./linux-kernel-0.11)
 - [《Linux 内核 0.12 完全注释》](./linux-kernel-0.12)
+
+## Windows
+
+- [Windows内核安全与驱动开发书附赠的光盘源码](./Windows-kernel-security-and-driver-development)
 
 ## 云计算
 
