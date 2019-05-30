@@ -5,11 +5,12 @@
 - [source-code](#source-code)
   - [操作系统](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)
   - [存储](#%E5%AD%98%E5%82%A8)
+  - [编程语言](#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80)
   - [网络](#%E7%BD%91%E7%BB%9C)
   - [Linux/Unix](#linuxunix)
   - [Windows](#windows)
   - [云计算](#%E4%BA%91%E8%AE%A1%E7%AE%97)
-  - [编辑器](#编辑器)
+  - [编辑器](#%E7%BC%96%E8%BE%91%E5%99%A8)
   - [其他](#%E5%85%B6%E4%BB%96)
 
 ## 操作系统
@@ -26,9 +27,10 @@
 
 ## 编程语言
 
-- [《C++ API设计》](./cpp-api-design)
-- [《Java 核心编程第10版》](./corejava10) - 官方提提供[下载地址](http://horstmann.com/corejava/)
-- [《自己动手实现Lua》](./luago-book)
+- [《C++ API 设计》](./cpp-api-design)
+- [《C++ 并发编程实践》](./CCiA_SourceCode)  - 官方提供[下载地址](https://www.manning.com/books/c-plus-plus-concurrency-in-action)
+- [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
+- [《自己动手实现 Lua》](./luago-book)
 
 ## 网络
 
