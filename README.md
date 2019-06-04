@@ -15,7 +15,7 @@
 
 ## 操作系统
 
-- [《一个操作系统的实现》](./an-oragne-os-implementation)
+- [《一个操作系统的实现》](./an-orange-os-implementation)
 - [《30天自制操作系统》](./30-days-make-operate-os)
 - [《x86 汇编语言：从实模式到保护模式》](./x86-assemble-from-real-mode-to-protect-mode)
 
