@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>yafeilinux.myHelp</namespace>
+  <virtualFolder>doc</virtualFolder>
+  <filterSection>
+    <toc>
+      <section title="我的帮助" ref="index.html">
+        <section title="关于我们" ref="aboutUs.html">
+          <section title="关于yafeilinux" ref="about_yafeilinux.html"></section>
+          <section title="关于Qt Creator系列教程" ref="about_QtCreator.html"></section>
+        </section>
+        <section title="加入我们" ref="joinUs.html"></section>
+      </section>
+    </toc>
+    <keywords>
+      <keyword name="关于" ref="aboutUs.html"/>
+      <keyword name="yafeilinux" ref="about_yafeilinux.html"/>
+      <keyword name="Qt Creator" ref="about_QtCreator.html"/>
+    </keywords>
+    <files>
+      <file>about_QtCreator.html</file>
+      <file>aboutUs.html</file>
+      <file>about_yafeilinux.html</file>
+      <file>index.html</file>
+      <file>joinUs.html</file>
+      <file>images/*.png</file>
+    </files>
+  </filterSection>
+</QtHelpProject>
+

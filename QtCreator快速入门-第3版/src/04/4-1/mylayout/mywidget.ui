@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWidget</class>
+ <widget class="QWidget" name="MyWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>200</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>500</width>
+    <height>350</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MyWidget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::ExpandingFieldsGrow</enum>
+     </property>
+     <property name="labelAlignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="nLabel">
+       <property name="text">
+        <string>姓名(&amp;N)</string>
+       </property>
+       <property name="buddy">
+        <cstring>nLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="nLineEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="sLabel">
+       <property name="text">
+        <string>性别(&amp;S)</string>
+       </property>
+       <property name="buddy">
+        <cstring>sComboBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="sComboBox"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="aLabel">
+       <property name="text">
+        <string>年龄(&amp;A)</string>
+       </property>
+       <property name="buddy">
+        <cstring>aSpinBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="aSpinBox"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="mLabel">
+       <property name="text">
+        <string>邮箱地址(&amp;M)</string>
+       </property>
+       <property name="buddy">
+        <cstring>mLineEdit</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="mLineEdit"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Expanding</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>12</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1">
+     <item>
+      <widget class="QFontComboBox" name="fontComboBox"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="text">
+        <string>显示可扩展窗口</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="textEdit"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

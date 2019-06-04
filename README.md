@@ -63,3 +63,4 @@
 
 - [《大话设计模式》](./chatting-design-pattern)
 - [《Qt5编程入门》](./Qt5编程入门)
+- [《QtCreator快速入门-第3版》](./QtCreator快速入门-第3版)

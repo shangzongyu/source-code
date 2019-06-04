@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/" >
+        <file>yafeilinux.png</file>
+
+    </qresource>
+</RCC>
