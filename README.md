@@ -21,14 +21,14 @@
 
 ## 存储
 
-- [《Redis In Action》](./redis-in-action),  - 官方提提供下载地址 <https://www.manning.com/books/redis-in-action>
+- [《Redis In Action》](./redis-in-action) - 官方提提供下载地址 <https://www.manning.com/books/redis-in-action>
 - [《MySQL技术内幕：SQL编程》](./MySQL技术内幕：SQL编程)
 - [《MySQL 必知必会》](./MySQL.Crash.Course) - 官方提供[下载地址](https://forta.com/books/0672327120/)
 
 ## 编程语言
 
 - [《C++ API 设计》](./cpp-api-design)
-- [《C++ 并发编程实践》](./CCiA_SourceCode)  - 官方提供[下载地址](https://www.manning.com/books/c-plus-plus-concurrency-in-action)
+- [《C++ 并发编程实践》](./CCiA_SourceCode) - 官方提供[下载地址](https://www.manning.com/books/c-plus-plus-concurrency-in-action)
 - [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
 - [《自己动手实现 Lua》](./luago-book)
 
@@ -57,8 +57,9 @@
 
 ## 编辑器
 
-- [《Vim实用技巧 - 第一版》][./practice-vim-code]
+- [《Vim实用技巧 - 第一版》](./practice-vim-code)
 
 ## 其他
 
 - [《大话设计模式》](./chatting-design-pattern)
+- [《Qt5编程入门》](./Qt5编程入门)
