@@ -31,6 +31,7 @@
 - [《C++ 并发编程实践》](./CCiA_SourceCode) - 官方提供[下载地址](https://www.manning.com/books/c-plus-plus-concurrency-in-action)
 - [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
 - [《自己动手实现 Lua》](./luago-book)
+- [《C++ Primer 第五版源码》](./CPP-Primer-5th-GCC_4_7_0) - 官方提供[下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
 - [《C++ Primer 第五版的答案》](./Cpp-Primer)
 
 ## 网络
