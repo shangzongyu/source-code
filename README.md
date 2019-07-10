@@ -33,6 +33,7 @@
 - [《自己动手实现 Lua》](./luago-book)
 - [《C++ Primer 第五版源码》](./CPP-Primer-5th-GCC_4_7_0) - 官方提供[下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
 - [《C++ Primer 第五版的答案》](./Cpp-Primer)
+- [《Essential C++》](./essential-cpp) - 官方提供[下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
 
 ## 网络
 

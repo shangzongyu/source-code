@@ -1,0 +1,21 @@
+BinaryTree::insert: root( Piglet )
+ok: BTnode::insert_value at left child( Eeyore )
+ok: BTnode::insert_value at right child( Roo )
+ok: BTnode::insert_value at right child( Tigger )
+ok: BTnode::insert_value at left child( Chris )
+ok: BTnode::insert_value at left child( Pooh )
+ok: BTnode::insert_value at right child( Kanga )
+preorder traversal: 
+Piglet Eeyore Chris Kanga Roo Pooh Tigger 
+
+about to remove root: Piglet
+
+
+preorder traversal after Piglet removal: 
+Roo Pooh Eeyore Chris Kanga Tigger 
+
+about to remove Eeyore
+
+
+preorder traversal after Piglet removal: 
+Roo Pooh Kanga Chris Tigger 
