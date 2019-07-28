@@ -1,0 +1,10 @@
+unit-test sample1 : sample1.cpp ;
+unit-test sample2 : sample2.cpp ;
+unit-test sample3 : sample3.cpp ;
+unit-test sample4 : sample4.cpp ;
+
+unit-test list : list.cpp ;
+unit-test set : set.cpp ;
+unit-test unordered_set : unordered_set.cpp ;
+
+unit-test multi_hooks : multi_hooks.cpp ;

@@ -1,0 +1,7 @@
+
+exe srv : srv.cpp
+          /lib//boost_thread
+          /lib//boost_date_time
+        ;
+exe client : client.cpp /lib//boost_thread ;
+#exe echo : echo.cpp /lib//boost_thread ;

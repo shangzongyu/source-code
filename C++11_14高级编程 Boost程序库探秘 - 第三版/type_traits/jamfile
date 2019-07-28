@@ -1,0 +1,7 @@
+unit-test categories : categories.cpp ;
+unit-test properties : properties.cpp ;
+unit-test relationships : relationships.cpp ;
+unit-test modifications : modifications.cpp ;
+unit-test function_traits : function_traits.cpp ;
+unit-test implementation : implementation.cpp ;
+unit-test examples : examples.cpp ;
