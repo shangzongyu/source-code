@@ -3,15 +3,15 @@
 > 一些书籍的源码整理
 
 - [source-code](#source-code)
-  - [操作系统](#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F)
-  - [存储](#%E5%AD%98%E5%82%A8)
-  - [编程语言](#%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80)
-  - [网络](#%E7%BD%91%E7%BB%9C)
-  - [Linux/Unix](#LinuxUnix)
-  - [Windows](#Windows)
-  - [云计算](#%E4%BA%91%E8%AE%A1%E7%AE%97)
-  - [编辑器](#%E7%BC%96%E8%BE%91%E5%99%A8)
-  - [其他](#%E5%85%B6%E4%BB%96)
+  - [操作系统](#%e6%93%8d%e4%bd%9c%e7%b3%bb%e7%bb%9f)
+  - [存储](#%e5%ad%98%e5%82%a8)
+  - [编程语言](#%e7%bc%96%e7%a8%8b%e8%af%ad%e8%a8%80)
+  - [网络](#%e7%bd%91%e7%bb%9c)
+  - [Linux/Unix](#linuxunix)
+  - [Windows](#windows)
+  - [云计算](#%e4%ba%91%e8%ae%a1%e7%ae%97)
+  - [编辑器](#%e7%bc%96%e8%be%91%e5%99%a8)
+  - [其他](#%e5%85%b6%e4%bb%96)
 
 ## 操作系统
 
@@ -29,12 +29,13 @@
 
 - [《C++ API 设计》](./cpp-api-design)
 - [《C++ 并发编程实践》](./CCiA_SourceCode) - 官方提供[下载地址](https://www.manning.com/books/c-plus-plus-concurrency-in-action)
-- [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
-- [《自己动手实现 Lua》](./luago-book)
 - [《C++ Primer 第五版源码》](./CPP-Primer-5th-GCC_4_7_0) - 官方提供[下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
 - [《C++ Primer 第五版的答案》](./Cpp-Primer)
 - [《Essential C++》](./essential-cpp) - 官方提供[下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
 - [《C++11_14高级编程 Boost程序库探秘 - 第三版》](./C++11_14高级编程 Boost程序库探秘 - 第三版)
+- [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
+- [《自己动手实现 Lua》](./luago-book)
+- [《Rust编程之道》](./tao-of-rust-codes) - 原始代码[Github](https://github.com/ZhangHanDong/tao-of-rust-codes)
 
 ## 网络
 
@@ -50,6 +51,9 @@
 - [《Linux Device Drivers 3》](./ldd3)
 - [《Linux 内核 0.11 完全注释》](./linux-kernel-0.11)
 - [《Linux 内核 0.12 完全注释》](./linux-kernel-0.12)
+- [《Linux环境编程：从应用到内核》](./programming-in-linux-enviroment-from-userspace-to-kernel)
+    - Linux 内核版本 3.2.44
+    - glic 的版本
 
 ## Windows
 
