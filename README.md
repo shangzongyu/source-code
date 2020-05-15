@@ -18,6 +18,8 @@
 - [《一个操作系统的实现》](./an-orange-os-implementation)
 - [《30天自制操作系统》](./30-days-make-operate-os)
 - [《x86 汇编语言：从实模式到保护模式》](./x86-assemble-from-real-mode-to-protect-mode)
+- [《Computer Systems: A Programmer's Perspective, 3/E (CS:APP3e)》/《深入理解计算机操作系统 - 第三版》](./cs_app3e)[官方网站](http://csapp.cs.cmu.edu/3e/code.html)
+  ![](./images/csapp3e-cover.jpg)
 
 ## 存储
 
@@ -32,7 +34,7 @@
 - [《C++ Primer 第五版源码》](./CPP-Primer-5th-GCC_4_7_0) - 官方提供[下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
 - [《C++ Primer 第五版的答案》](./Cpp-Primer)
 - [《Essential C++》](./essential-cpp) - 官方提供[下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
-- [《C++11_14高级编程 Boost程序库探秘 - 第三版》](./C++11_14高级编程 Boost程序库探秘 - 第三版)
+- [《C++11_14高级编程 Boost程序库探秘 - 第三版》](./C++11_14高级编程_Boost_程序库探秘_第三版)
 - [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
 - [《自己动手实现 Lua》](./luago-book)
 - [《Rust编程之道》](./tao-of-rust-codes) - 原始代码[Github](https://github.com/ZhangHanDong/tao-of-rust-codes)
@@ -52,8 +54,8 @@
 - [《Linux 内核 0.11 完全注释》](./linux-kernel-0.11)
 - [《Linux 内核 0.12 完全注释》](./linux-kernel-0.12)
 - [《Linux环境编程：从应用到内核》](./programming-in-linux-enviroment-from-userspace-to-kernel)
-    - Linux 内核版本 3.2.44
-    - glic 的版本
+  - Linux 内核版本 3.2.44
+  - glic 的版本
 
 ## Windows
 
