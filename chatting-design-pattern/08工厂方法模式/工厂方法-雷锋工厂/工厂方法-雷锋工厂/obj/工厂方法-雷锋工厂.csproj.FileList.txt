@@ -1,5 +1,0 @@
-obj\Debug\ResolveAssemblyReference.cache
-bin\Debug\工厂方法-雷锋工厂.exe
-bin\Debug\工厂方法-雷锋工厂.pdb
-obj\Debug\工厂方法-雷锋工厂.exe
-obj\Debug\工厂方法-雷锋工厂.pdb

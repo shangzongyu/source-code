@@ -1,0 +1,5 @@
+E:\dotnet\创业时开发\Win程序2005\设计模式\10装饰模式\装饰模式-穿衣01\装饰模式\obj\Debug\装饰模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\10装饰模式\装饰模式-穿衣01\装饰模式\obj\Debug\装饰模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\10装饰模式\装饰模式-穿衣01\装饰模式\bin\Debug\装饰模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\10装饰模式\装饰模式-穿衣01\装饰模式\bin\Debug\装饰模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\10装饰模式\装饰模式-穿衣01\装饰模式\obj\Debug\ResolveAssemblyReference.cache

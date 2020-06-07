@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "计算器", "计算器\计算器.csproj", "{C36E3515-7CC4-41C1-9E0D-5B975E14D2CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationLibrary", "OperationLibrary\OperationLibrary.csproj", "{C2F38F50-BC4A-4865-9738-4357C4CA86EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "计算器控制台", "计算器控制台\计算器控制台.csproj", "{A07E4867-E26F-4CF0-A456-4C58C2979D30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C36E3515-7CC4-41C1-9E0D-5B975E14D2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C36E3515-7CC4-41C1-9E0D-5B975E14D2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C36E3515-7CC4-41C1-9E0D-5B975E14D2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C36E3515-7CC4-41C1-9E0D-5B975E14D2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F38F50-BC4A-4865-9738-4357C4CA86EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F38F50-BC4A-4865-9738-4357C4CA86EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F38F50-BC4A-4865-9738-4357C4CA86EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F38F50-BC4A-4865-9738-4357C4CA86EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A07E4867-E26F-4CF0-A456-4C58C2979D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A07E4867-E26F-4CF0-A456-4C58C2979D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A07E4867-E26F-4CF0-A456-4C58C2979D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A07E4867-E26F-4CF0-A456-4C58C2979D30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

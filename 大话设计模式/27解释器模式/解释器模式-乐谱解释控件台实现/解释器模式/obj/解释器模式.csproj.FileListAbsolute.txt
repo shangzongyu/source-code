@@ -1,0 +1,5 @@
+E:\document\模式\源代码\27解释器模式\解释器模式-乐谱解释控件台实现\解释器模式\obj\Debug\解释器模式.exe
+E:\document\模式\源代码\27解释器模式\解释器模式-乐谱解释控件台实现\解释器模式\obj\Debug\解释器模式.pdb
+E:\document\模式\源代码\27解释器模式\解释器模式-乐谱解释控件台实现\解释器模式\bin\Debug\解释器模式.exe
+E:\document\模式\源代码\27解释器模式\解释器模式-乐谱解释控件台实现\解释器模式\bin\Debug\解释器模式.pdb
+E:\document\模式\源代码\27解释器模式\解释器模式-乐谱解释控件台实现\解释器模式\obj\Debug\ResolveAssemblyReference.cache

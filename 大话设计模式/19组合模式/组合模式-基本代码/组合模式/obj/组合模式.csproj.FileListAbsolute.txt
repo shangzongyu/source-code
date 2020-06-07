@@ -1,0 +1,5 @@
+E:\document\模式\源代码\19组合模式\组合模式-基本代码\组合模式\obj\Debug\组合模式.exe
+E:\document\模式\源代码\19组合模式\组合模式-基本代码\组合模式\obj\Debug\组合模式.pdb
+E:\document\模式\源代码\19组合模式\组合模式-基本代码\组合模式\bin\Debug\组合模式.exe
+E:\document\模式\源代码\19组合模式\组合模式-基本代码\组合模式\bin\Debug\组合模式.pdb
+E:\document\模式\源代码\19组合模式\组合模式-基本代码\组合模式\obj\Debug\ResolveAssemblyReference.cache

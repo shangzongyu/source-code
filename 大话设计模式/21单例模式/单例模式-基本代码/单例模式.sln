@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "单例模式", "单例模式\单例模式.csproj", "{C654DEE3-5D83-425A-9F13-593D71A16FEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C654DEE3-5D83-425A-9F13-593D71A16FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C654DEE3-5D83-425A-9F13-593D71A16FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C654DEE3-5D83-425A-9F13-593D71A16FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C654DEE3-5D83-425A-9F13-593D71A16FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

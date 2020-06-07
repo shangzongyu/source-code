@@ -1,5 +1,0 @@
-obj\Debug\ResolveAssemblyReference.cache
-bin\Debug\工厂方法-计算器.exe
-bin\Debug\工厂方法-计算器.pdb
-obj\Debug\工厂方法-计算器.exe
-obj\Debug\工厂方法-计算器.pdb

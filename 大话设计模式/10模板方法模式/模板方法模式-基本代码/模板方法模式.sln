@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "模板方法模式", "模板方法模式\模板方法模式.csproj", "{08A72723-51C5-470E-963C-88FB4284F178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08A72723-51C5-470E-963C-88FB4284F178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A72723-51C5-470E-963C-88FB4284F178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A72723-51C5-470E-963C-88FB4284F178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A72723-51C5-470E-963C-88FB4284F178}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
