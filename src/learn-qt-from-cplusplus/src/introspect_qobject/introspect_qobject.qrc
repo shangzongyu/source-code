@@ -1,0 +1,4 @@
+<RCC>
+    <qresource prefix="introspect_qobject">
+    </qresource>
+</RCC>
