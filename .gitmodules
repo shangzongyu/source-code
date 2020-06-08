@@ -1,6 +1,0 @@
-[submodule "luago-book"]
-	path = luago-book
-	url = https://github.com/zxh0/luago-book.git
-[submodule "CPP-Primer-5-Answers"]
-	path = Cpp-Primer
-	url = https://github.com/shangzongyu/Cpp-Primer.git
