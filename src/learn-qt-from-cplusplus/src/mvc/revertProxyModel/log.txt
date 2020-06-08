@@ -1,0 +1,131 @@
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+
+::parent( proxy_child { 0,0,0 } )
+    source_child: [36] ==> source_parent []
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+
+::parent( proxy_child { 0,0,0 } )
+    source_child: [36] ==> source_parent []
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::rowCount( proxy_parent{-1,-1,0} )
+  source_parent: []  rowCount = 1
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+
+::parent( proxy_child { 0,0,0 } )
+    source_child: [36] ==> source_parent []
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::rowCount( proxy_parent{-1,-1,0} )
+  source_parent: []  rowCount = 1
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+
+::parent( proxy_child { 0,0,0 } )
+    source_child: [36] ==> source_parent []
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+
+::parent( proxy_child { 0,0,0 } )
+    source_child: [36] ==> source_parent []
+
+::parent( proxy_child { 0,0,0 } )
+    source_child: [36] ==> source_parent []
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+
+::parent( proxy_child { 0,0,0 } )
+    source_child: [36] ==> source_parent []
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0
+::index(0,0,proxy_parent{-1,-1,0} )
+  source: [36], registered at 0

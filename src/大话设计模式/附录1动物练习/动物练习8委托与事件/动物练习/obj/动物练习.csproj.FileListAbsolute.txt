@@ -1,0 +1,7 @@
+E:\dotnet\创业时开发\Win程序2005\设计模式\动物练习\动物练习\动物练习\bin\Debug\动物练习.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\动物练习\动物练习\动物练习\bin\Debug\动物练习.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\动物练习\动物练习\动物练习\obj\Debug\ResolveAssemblyReference.cache
+E:\dotnet\创业时开发\Win程序2005\设计模式\动物练习\动物练习\动物练习\obj\Debug\动物练习.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\动物练习\动物练习\动物练习\obj\Debug\动物练习.pdb
+E:\document\模式\源代码\动物练习\动物练习\动物练习\obj\Debug\动物练习.exe
+E:\document\模式\源代码\动物练习\动物练习\动物练习\obj\Debug\动物练习.pdb

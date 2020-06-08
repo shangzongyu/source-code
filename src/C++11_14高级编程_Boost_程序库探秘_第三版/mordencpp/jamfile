@@ -1,0 +1,12 @@
+
+unit-test rvalue : rvalue.cpp ;
+unit-test auto : auto.cpp ;
+unit-test nullptr : nullptr.cpp ;
+unit-test f : for.cpp ;
+unit-test init : init.cpp ;
+unit-test c : class.cpp ;
+unit-test generic : generic.cpp ;
+unit-test thread : thread.cpp /lib//boost_thread ;
+unit-test lambda : lambda.cpp ;
+unit-test safety : safety.cpp ;
+unit-test others : others.cpp ;

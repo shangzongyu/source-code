@@ -1,0 +1,24 @@
+Chapter 15  -  Sockets.
+
+
+client1.c - a simple local client program.
+
+server1.c - a simple local server program.
+
+client2.c - a simple network client program.
+
+server2.c - a simple network server program.
+
+client3.c - client2.c amended to translate between host and network byte ordering.
+
+server3.c - server2.c amended to translate between host and network byte ordering.
+
+getname.c - a program that gets netork information using gethostbyname.
+
+getdate.c - a program that connects to a standard network service using sockets.
+
+server4.c - a program that serves multiple clients by using fork.
+
+select.c  - a program that uses the function select to check for activity on a range of file descriptors.
+
+server5.c - a program that serves multiple clients using the function select instead of fork.

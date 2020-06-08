@@ -1,0 +1,12 @@
+set nocompatible
+" set errorformat=%W%f\,\ line\ %l,\ character\ %c:\ %m
+set errorformat=%f,
+let &efm='%A%.%*'
+
+let &efm='%A'
+let &efm.='%f\, '
+let &efm.='line %l\, '
+let &efm.='character %c:'
+let &efm.='%m' . ','
+let &efm.='%Z%.%#' . ','
+let &efm .= '%-G%.%#'

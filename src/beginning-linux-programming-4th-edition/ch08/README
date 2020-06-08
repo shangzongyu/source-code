@@ -1,0 +1,25 @@
+Chapter 8 - MySQL
+
+
+connect1.c  - A program that connects to a MySQL database
+
+connect2.c  - A program that uses a MySQL connection
+
+select1.c  - A program that uses mysql_store_result
+
+select2.c  - A program that uses mysql_use_result
+
+select3.c  - A program that displays fetched data
+
+select4.c  - A program that displays fetched column details
+
+insert1.c  - A program that inserts data
+
+insert2.c  - A program that reports on data inserted
+
+update1.c  - A program that updates data
+
+You may have to adjust the compile line in the Makefile, different distributions need slightly different compile options, and it seems to change with each release.
+
+In particular some systems may need -L/usr/lib/mysql modifying, and some may need the include directory changing to find include files.
+

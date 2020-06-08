@@ -1,0 +1,5 @@
+E:\document\模式\大话设计模式源代码\09原型模式\原型模式简历03\原型模式\obj\Debug\原型模式.exe
+E:\document\模式\大话设计模式源代码\09原型模式\原型模式简历03\原型模式\obj\Debug\原型模式.pdb
+E:\document\模式\大话设计模式源代码\09原型模式\原型模式简历03\原型模式\bin\Debug\原型模式.exe
+E:\document\模式\大话设计模式源代码\09原型模式\原型模式简历03\原型模式\bin\Debug\原型模式.pdb
+E:\document\模式\大话设计模式源代码\09原型模式\原型模式简历03\原型模式\obj\Debug\ResolveAssemblyReference.cache

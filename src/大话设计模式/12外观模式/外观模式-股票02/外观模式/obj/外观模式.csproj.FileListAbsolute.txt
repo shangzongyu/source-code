@@ -1,0 +1,5 @@
+E:\dotnet\创业时开发\Win程序2005\设计模式\11外观模式\外观模式-股票02\外观模式\obj\Debug\外观模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\11外观模式\外观模式-股票02\外观模式\obj\Debug\外观模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\11外观模式\外观模式-股票02\外观模式\bin\Debug\外观模式.exe
+E:\dotnet\创业时开发\Win程序2005\设计模式\11外观模式\外观模式-股票02\外观模式\bin\Debug\外观模式.pdb
+E:\dotnet\创业时开发\Win程序2005\设计模式\11外观模式\外观模式-股票02\外观模式\obj\Debug\ResolveAssemblyReference.cache

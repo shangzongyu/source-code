@@ -1,0 +1,21 @@
+Programming KDE using Qt
+
+CD Database Application using KDE
+
+To build, first create Makefile using qmake utility:
+
+$ qmake -o Makefile cdapp.pro
+
+Then compile as usual:
+
+$ make
+
+N.B. May need to change macros in cdapp.pro to suit your KDE installation path
+
+qmake is distributed with Qt and should be made visible in your path.
+
+If not, for example on SuSE 8.2 run qmake as 
+/usr/lib/qt3/bin/qmake -o Makefile cdapp.pro 
+
+and run the make with QTDIR set 
+QTDIR=/usr/lib/qt3 make

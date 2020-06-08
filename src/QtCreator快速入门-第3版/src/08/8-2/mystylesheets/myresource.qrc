@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>beijing01.png</file>
+        <file>beijing02.png</file>
+        <file>slider.png</file>
+        <file>sliderHandle.png</file>
+    </qresource>
+    <qresource prefix="/qss">
+        <file>my.qss</file>
+        <file>my1.qss</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+for file in $(ls f*); do
+    echo $file
+done
+
+exit 0
+

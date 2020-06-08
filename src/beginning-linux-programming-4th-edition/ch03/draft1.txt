@@ -1,0 +1,3 @@
+Files
+In this chapter we will be looking at files and directories and how to manipulate them. We will learn how to create files, open them, read, write and close them. We'll also learn how programs can manipulate directories, to create, scan and delete them, for example. After the last chapter's diversion into shells, we now start programming in C.
+Before proceeding to the way UNIX handles file I/O, we'll review the concepts associated with files, directories and devices. To manipulate files and directories, we need to make system calls (the UNIX parallel of the Windows API), but there also exists a whole range of library functions, the standard I/O library (stdio), to make file handling more efficient.

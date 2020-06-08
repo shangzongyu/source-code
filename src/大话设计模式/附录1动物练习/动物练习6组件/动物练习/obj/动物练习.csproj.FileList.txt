@@ -1,0 +1,10 @@
+bin\Debug\动物练习.exe
+bin\Debug\动物练习.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\动物练习.Form1.resources
+obj\Debug\动物练习.Properties.Resources.resources
+obj\Debug\动物练习.csproj.GenerateResource.Cache
+obj\Debug\动物练习.exe
+obj\Debug\动物练习.pdb
+bin\Debug\AnimalLibrary.dll
+bin\Debug\AnimalLibrary.pdb

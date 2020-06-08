@@ -1,0 +1,56 @@
+BinaryTree::insert: root( 24 )
+ok: BTnode::insert_value at left child( 18 )
+ok: BTnode::insert_value at right child( 36 )
+ok: BTnode::insert_value at left child( 12 )
+ok: BTnode::insert_value at right child( 14 )
+ok: BTnode::insert_value at left child( 8 )
+BTnode::insert_value: increment count( 24 : 2 )
+ok: BTnode::insert_value at left child( 1 )
+ok: BTnode::insert_value at right child( 42 )
+BTnode::insert_value: increment count( 24 : 3 )
+BTnode::insert_value: increment count( 8 : 2 )
+BTnode::insert_value: increment count( 8 : 3 )
+ok: BTnode::insert_value at right child( 16 )
+ok: BTnode::insert_value at right child( 55 )
+preorder traversal: 
+24 ( 3 )  18 ( 1 )  12 ( 1 )  8 ( 3 )  1 ( 1 )  14 ( 1 )  16 ( 1 )  36 ( 1 )  42 ( 1 )  55 ( 1 ) 
+ 
+bt is now  empty! 
+BinaryTree::insert: root( 1 )
+ok: BTnode::insert_value at right child( 8 )
+BTnode::insert_value: increment count( 8 : 2 )
+BTnode::insert_value: increment count( 8 : 3 )
+ok: BTnode::insert_value at right child( 12 )
+ok: BTnode::insert_value at right child( 14 )
+ok: BTnode::insert_value at right child( 16 )
+ok: BTnode::insert_value at right child( 18 )
+ok: BTnode::insert_value at right child( 24 )
+BTnode::insert_value: increment count( 24 : 2 )
+BTnode::insert_value: increment count( 24 : 3 )
+ok: BTnode::insert_value at right child( 36 )
+ok: BTnode::insert_value at right child( 42 )
+ok: BTnode::insert_value at right child( 55 )
+
+
+inorder traversal:
+1 ( 1 )  8 ( 3 )  12 ( 1 )  14 ( 1 )  16 ( 1 )  18 ( 1 )  24 ( 3 )  36 ( 1 )  42 ( 1 )  55 ( 1 )  
+
+BTnode::insert_value: increment count( 1 : 2 )
+BTnode::insert_value: increment count( 8 : 4 )
+BTnode::insert_value: increment count( 8 : 5 )
+BTnode::insert_value: increment count( 8 : 6 )
+BTnode::insert_value: increment count( 12 : 2 )
+BTnode::insert_value: increment count( 14 : 2 )
+BTnode::insert_value: increment count( 16 : 2 )
+BTnode::insert_value: increment count( 18 : 2 )
+BTnode::insert_value: increment count( 24 : 4 )
+BTnode::insert_value: increment count( 24 : 5 )
+BTnode::insert_value: increment count( 24 : 6 )
+BTnode::insert_value: increment count( 36 : 2 )
+BTnode::insert_value: increment count( 42 : 2 )
+BTnode::insert_value: increment count( 55 : 2 )
+
+
+postorder traversal:
+55 ( 2 )  42 ( 2 )  36 ( 2 )  24 ( 6 )  18 ( 2 )  16 ( 2 )  14 ( 2 )  12 ( 2 )  8 ( 6 )  1 ( 2 )  
+

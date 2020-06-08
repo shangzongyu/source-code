@@ -1,0 +1,29 @@
+unit-test sample1 : sample1.cpp ;
+unit-test sample2 : sample2.cpp ;
+
+unit-test traits : traits.cpp ;
+
+unit-test array : array.cpp ;
+unit-test container : container.cpp ;
+unit-test file : file.cpp ;
+
+unit-test counter : counter.cpp ;
+unit-test newline : newline.cpp ;
+unit-test regex : regex.cpp /lib//boost_regex ;
+unit-test zlib : zlib.cpp
+          /lib//z /lib//boost_iostreams
+          ;
+
+unit-test filtering_stream : filtering_stream.cpp ;
+unit-test source_sink : source_sink.cpp ;
+
+unit-test hex_filter : hex_filter.cpp ;
+unit-test bracket_line_filter : bracket_line_filter.cpp ;
+unit-test sha1_filter : sha1_filter.cpp ;
+
+unit-test invert : invert.cpp ;
+unit-test restrict : restrict.cpp ;
+unit-test tee : tee.cpp /lib//boost_regex ;
+
+unit-test combine : combine.cpp ;
+unit-test compose : compose.cpp /lib//boost_regex ;

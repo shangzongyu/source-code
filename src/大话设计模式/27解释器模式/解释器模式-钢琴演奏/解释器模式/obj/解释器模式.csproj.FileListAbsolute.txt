@@ -1,0 +1,15 @@
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Release\解释器模式.exe
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Release\解释器模式.pdb
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\解释器模式.exe
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\解释器模式.pdb
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\bin\Debug\解释器模式.exe
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\bin\Debug\解释器模式.pdb
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\bin\Debug\Interop.WMPLib.dll
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\bin\Debug\AxInterop.WMPLib.dll
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\ResolveAssemblyReference.cache
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\Interop.WMPLib.dll
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\AxInterop.WMPLib.dll
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\解释器模式.csproj.ResolveComReference.cache
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\解释器模式.Form1.resources
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\解释器模式.Properties.Resources.resources
+E:\document\模式\解释器模式-钢琴演奏\解释器模式\obj\Debug\解释器模式.csproj.GenerateResource.Cache

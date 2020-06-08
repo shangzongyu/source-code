@@ -1,0 +1,14 @@
+unit-test sample1 : sample1.cpp ;
+unit-test sample2 : sample2.cpp ;
+unit-test sample3 : sample3.cpp ;
+
+unit-test key_extractor : key_extractor.cpp ;
+unit-test sequenced_index : sequenced_index.cpp ;
+unit-test random_access_index : random_access_index.cpp ;
+unit-test ordered_index : ordered_index.cpp ;
+unit-test hashed_index : hashed_index.cpp ;
+unit-test modify : modify.cpp ;
+
+unit-test multi_index_container : multi_index_container.cpp ;
+
+unit-test composite_key : composite_key.cpp ;

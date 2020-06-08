@@ -1,0 +1,27 @@
+Curses:
+
+To compile, just type 'make'.
+
+If you get problems with the header files not being found, you may need
+to specify an additional include path with -I, like this:
+
+cc -o XXXXX XXXXX.c -I/usr/include/ncurses -lncurses
+
+
+screen1.c        - A program that prints "Hello World" just where you want it.
+
+moveadd.c      -  A program that prints dynamic quotes from Shakespeare's Scottish play.
+
+ipmode.c         -  A very simple password program that shows keyboard modes.
+
+multiw1.c        -  A program that displays multiple windows, refreshes windows and brings them to the top.
+
+subscl.c         -  A program that displays subwindows and gets text to scroll.
+
+keypad.c         -  A program that responds to keystrokes.
+
+color.c          -  A program that finds out the color pairs for the user's terminal.
+
+pad.c            -  A program that extracts text from a pad structure that is larger than the terminal window.
+
+app/curses_app.c - This program re-implements the CD Title database application

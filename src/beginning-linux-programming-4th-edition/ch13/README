@@ -1,0 +1,54 @@
+Inter-Process Communication: Pipes.
+
+
+popen1.c   -  A program that implements pipes using popen and pclose and captures output from
+an external program.
+
+popen2.c   -  A program that sends data to an external program using popen.
+
+popen3.c   -  A program that reads larger amounts of data from a pipe by using multiple reads.
+
+popen4.c   -  A program that start a shell using popen.
+
+pipe1.c    -  A program that uses the function pipe to create a pipe.
+
+pipe2.c    -  A program that passes data between the two halves of a forked process using pipe.
+
+pipe3.c    -  A program that uses the functions fork and execl to create a child process and then
+uses the function pipe to pass data from one to the other.
+
+pipe4.c    -  The child process called by execl in pipe3.c.
+
+pipe5.c    -  A program that uses a pipe between the standard output and input of two processes.
+
+fifo1.c    -  A program that creates a named pipe using fifo.
+
+fifo2.c    -  A program that can be used to investigate the nature of fifo files by using open.
+
+fifo3.c, fifo4.c  -  Two programs that show how to pass data between unrelated processes using a fifo.
+
+client.h  -  A header file for the forthcoming client and server programs.
+
+server.c, client.c  -  A client/server application using named pipes (fifos).
+
+
+CD Application.
+
+app/makefile  -  The application's makefile. (See Chapter 8.)
+
+app/cd_data.h, app/cliserv.h   -  Header files.
+
+app/app_ui.c  -  Identical to app/app_ui.c in Chapter 7.
+
+app/cd_dbm.c  -  Identical to app/access.c in Chapter 7.
+
+app/client_if.c, app/server.c  -  Two files that interface old functions with new.
+
+app/pipe_imp.c  - The pipe joining the client to the server.
+
+To compile the application:
+$ make -f makefile
+
+To run the application:
+$./server -i &
+$./client

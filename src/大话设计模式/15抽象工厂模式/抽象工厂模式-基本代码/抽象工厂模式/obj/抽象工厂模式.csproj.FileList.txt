@@ -1,0 +1,5 @@
+bin\Debug\抽象工厂模式.exe
+bin\Debug\抽象工厂模式.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\抽象工厂模式.exe
+obj\Debug\抽象工厂模式.pdb

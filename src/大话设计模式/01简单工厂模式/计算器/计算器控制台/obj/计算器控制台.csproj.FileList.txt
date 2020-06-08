@@ -1,0 +1,7 @@
+bin\Debug\计算器控制台.exe
+bin\Debug\计算器控制台.pdb
+bin\Debug\OperationLibrary.dll
+bin\Debug\OperationLibrary.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\计算器控制台.exe
+obj\Debug\计算器控制台.pdb

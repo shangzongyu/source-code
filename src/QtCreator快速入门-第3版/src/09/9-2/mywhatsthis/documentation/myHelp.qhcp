@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<QHelpCollectionProject version="1.0">
+<assistant>
+  <title>我的帮助系统</title>
+  <applicationIcon>images/yafeilinux.png</applicationIcon>
+  <cacheDirectory>cache/myHelp</cacheDirectory>
+  <homePage>qthelp://yafeilinux.myHelp/doc/index.html</homePage>
+  <startPage>qthelp://yafeilinux.myHelp/doc/index.html</startPage>
+  <aboutMenuText>
+    <text>关于该帮助</text>
+  </aboutMenuText>
+  <aboutDialog>
+    <file>about.txt</file>
+    <icon>images/yafeilinux.png</icon>
+  </aboutDialog>
+  <enableDocumentationManager>false</enableDocumentationManager>
+  <enableAddressBar>false</enableAddressBar>
+  <enableFilterFunctionality>false</enableFilterFunctionality>
+</assistant>
+<docFiles>
+  <generate>
+    <file>
+      <input>myHelp.qhp</input>
+      <output>myHelp.qch</output>
+    </file>
+  </generate>
+  <register>
+    <file>myHelp.qch</file>
+  </register>
+</docFiles>
+</QHelpCollectionProject>

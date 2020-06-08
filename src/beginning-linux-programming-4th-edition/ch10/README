@@ -1,0 +1,18 @@
+Chapter 10 - Debugging.
+
+
+debug1.c  -  A bugged bubble sort program.
+
+debug2.c  -  The same program with additional instrumentation code.
+
+debug3.c  -  The same program again, with the bug amplified.
+
+cinfo.c   -  A program which can print information about its own compilation date and time.
+
+debug4.c  -  The bubble sort program with one of its bugs fixed.
+
+assert.c  -  A program that demonstrates the assert macro.
+
+efence.c  -  A program which abuses memory to test the Electric Fence library. 
+
+checker.c -  A program to test the valgrind memory debugger.

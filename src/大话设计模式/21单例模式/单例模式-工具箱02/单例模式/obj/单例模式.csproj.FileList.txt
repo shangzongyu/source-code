@@ -1,0 +1,9 @@
+bin\Debug\单例模式.exe
+bin\Debug\单例模式.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\单例模式.Form1.resources
+obj\Debug\单例模式.Properties.Resources.resources
+obj\Debug\单例模式.csproj.GenerateResource.Cache
+obj\Debug\单例模式.exe
+obj\Debug\单例模式.pdb
+obj\Debug\单例模式.FormToolbox.resources

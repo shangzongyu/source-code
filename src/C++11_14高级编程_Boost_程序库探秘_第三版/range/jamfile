@@ -1,0 +1,5 @@
+unit-test traits : traits.cpp ;
+unit-test algorithm : algorithm.cpp ;
+unit-test iterator_range : iterator_range.cpp ;
+unit-test adaptors : adaptors.cpp ;
+unit-test join : join.cpp ;

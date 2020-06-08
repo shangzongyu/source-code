@@ -1,0 +1,5 @@
+bin\Debug\策略模式.exe
+bin\Debug\策略模式.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\策略模式.exe
+obj\Debug\策略模式.pdb

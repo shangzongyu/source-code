@@ -1,0 +1,19 @@
+unit-test integral : integral.cpp ;
+unit-test ifc : if.cpp ;
+unit-test container : container.cpp ;
+unit-test algorithm : algorithm.cpp ;
+unit-test lambda : lambda.cpp ;
+unit-test assert : assert.cpp ;
+
+lib libtest : libtest.cpp : <link>shared ;
+
+# cp *.so
+path-constant PWD : . ;
+install $PWD : libtest ;
+
+#g++ -g -o dl1 dl1.cpp -ldl
+
+lib dl : : <link>shared ;
+
+unit-test dl1 : dl1.cpp dl ;
+unit-test dl2 : dl2.cpp dl ;

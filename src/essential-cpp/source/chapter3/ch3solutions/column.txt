@@ -1,0 +1,12 @@
+This column is motivated by an email that was recently sent to us. 
+A C++ programmer who had recently received the latest version of 
+his C++ compiler was puzzled because he was no longer able to use 
+pointers to extern "C" functions and pointers to C++ functions 
+interchangeably. Was this a bug in the new compiler or was this a 
+new feature of Standard C++? And if this was a new feature of Standard 
+C++, how could he work around it? The short answer to the first 
+question is that yes, in Standard C++, pointers to C functions and 
+pointers to C++ functions can no longer be used interchangeably. In 
+this column, we examine the consequences of this new language rule 
+more closely.
+

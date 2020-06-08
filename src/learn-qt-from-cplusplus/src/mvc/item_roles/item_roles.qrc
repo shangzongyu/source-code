@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Japan_Tsunami.jpg</file>
+        <file>images/spy_plane.jpg</file>
+        <file>images/underwater_bodies.jpg</file>
+        <file>images/Shark.jpg</file>
+        <file>images/Japan_fire_flood.jpg</file>
+        <file>images/911.jpg</file>
+        <file>images/fungus.jpg</file>
+        <file>images/crocodile.jpg</file>
+    </qresource>
+</RCC>

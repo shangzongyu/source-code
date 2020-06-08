@@ -1,0 +1,10 @@
+unit-test scope_exit : scope_exit.cpp ;
+unit-test compressed_pair : compressed_pair.cpp ;
+unit-test checked_delete : checked_delete.cpp ;
+unit-test addressof : addressof.cpp ;
+#unit-test value_init : value_init.cpp ;
+unit-test pointee : pointee.cpp ;
+unit-test base_from_member : base_from_member.cpp ;
+unit-test conversion : conversion.cpp ;
+unit-test numeric : numeric.cpp ;
+unit-test predef : predef.cpp ;

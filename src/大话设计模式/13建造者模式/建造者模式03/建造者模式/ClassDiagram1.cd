@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="宋体" Size="9" />
+  <Class Name="建造者模式.Form1" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Form1.cs</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAIAAAAAEQAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="建造者模式.PersonBuilder">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PersonBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAIAEIAAAAAkAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="建造者模式.PersonThinBuilder">
+    <Position X="2.5" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>PersonBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAIAAAAAkAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="建造者模式.PersonFatBuilder">
+    <Position X="4.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>PersonBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAAIAAAAAkAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="建造者模式.PersonDirector">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PersonBuilder.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="建造者模式.Program" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="建造者模式.Properties.Resources" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="建造者模式.Properties.Settings" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

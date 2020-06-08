@@ -1,0 +1,21 @@
+unit-test sample : sample.cpp ;
+unit-test reversible_ptr_container : reversible_ptr_container.cpp ;
+unit-test ptr_sequence_adapter : ptr_sequence_adapter.cpp ;
+
+unit-test ptr_vector : ptr_vector.cpp ;
+unit-test ptr_deque : ptr_deque.cpp ;
+unit-test ptr_list : ptr_list.cpp ;
+unit-test ptr_circular_buffer : ptr_circular_buffer.cpp ;
+unit-test ptr_array : ptr_array.cpp ;
+
+unit-test nullable : nullable.cpp ;
+
+unit-test ptr_set : ptr_set.cpp ;
+unit-test ptr_unordered_set : ptr_unordered_set.cpp ;
+unit-test ptr_map : ptr_map.cpp ;
+unit-test ptr_unordered_map : ptr_unordered_map.cpp ;
+
+unit-test assign : assign.cpp ;
+unit-test algorithm : algorithm.cpp ;
+unit-test indirect_fun : indirect_fun.cpp ;
+unit-test view_clone_allocator : view_clone_allocator.cpp ;

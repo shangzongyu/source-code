@@ -1,0 +1,15 @@
+unit-test next_prior : next_prior.cpp ;
+unit-test iterator_traits : iterator_traits.cpp ;
+unit-test iterator_facade : iterator_facade.cpp ;
+unit-test iterator_adaptor : iterator_adaptor.cpp ;
+unit-test shared_container_iterator : shared_container_iterator.cpp ;
+unit-test generator_iterator : generator_iterator.cpp ;
+unit-test reverse_iterator : reverse_iterator.cpp ;
+unit-test indirect_iterator : indirect_iterator.cpp ;
+unit-test counting_iterator : counting_iterator.cpp ;
+unit-test function_input_iterator : function_input_iterator.cpp ;
+unit-test function_output_iterator : function_output_iterator.cpp ;
+unit-test filter_iterator : filter_iterator.cpp ;
+unit-test transform_iterator : transform_iterator.cpp ;
+unit-test permutation_iterator : permutation_iterator.cpp ;
+unit-test zip_iterator : zip_iterator.cpp ;

@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	//
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Anglophone	anglophone.rb	/^class Anglophone < Speaker$/;"	c
+Francophone	francophone.rb	/^class Francophone < Speaker$/;"	c
+Speaker	speaker.rb	/^class Speaker$/;"	c
+initialize	speaker.rb	/^  def initialize(name)$/;"	f
+speak	anglophone.rb	/^  def speak$/;"	f	class:Anglophone
+speak	francophone.rb	/^  def speak$/;"	f	class:Francophone
+speak	speaker.rb	/^  def speak$/;"	f	class:Speaker

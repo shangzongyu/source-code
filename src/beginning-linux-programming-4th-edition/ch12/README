@@ -1,0 +1,23 @@
+POSIX Threads.
+
+On most recent Linux distributions the standard Makefile should compile these rpograms sucessfully. The alternative, makefile-explicit, is provided for any systems that need the include and thread library paths explicity defining.
+
+thread1.c  -  a simple program using threads.
+
+thread2.c  -  a program that executes 2 threads simultaneously.  You may have to wait a few seconds before
+this program produces output.
+
+thread3.c  -  a program that synchronizes threads using seamphores.
+
+thread3a.c  -  a modified version of thread3.c.
+
+thread4.c  -  a program that synchronizes threads using mutexes.
+
+thread5.c  -  a program that sets a thread's detached state attribute.
+
+The remaining programs may not compile on older Linux distros.
+
+thread6.c, thread7, thread7a.c  -  programs that set a thread's scheduling attribute.
+
+
+thread8.c, thread8a.c  -  two programs that create many threads, the a version corrects a subtle race condition.

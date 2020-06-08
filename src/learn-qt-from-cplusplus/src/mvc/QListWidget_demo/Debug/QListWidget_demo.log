@@ -1,0 +1,20 @@
+﻿生成启动时间为 2012-4-25 11:11:29。
+     1>项目“z:\examples\mvc\QListWidget_demo\QListWidget_demo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\QListWidget_demo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       CustomBuild:
+         所有输出均为最新。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       Link:
+         所有输出均为最新。
+         QListWidget_demo.vcxproj -> z:\examples\mvc\QListWidget_demo\QListWidget_demo.exe
+       FinalizeBuildStatus:
+         正在删除文件“Debug\QListWidget_demo.unsuccessfulbuild”。
+         正在对“Debug\QListWidget_demo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“z:\examples\mvc\QListWidget_demo\QListWidget_demo.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.15

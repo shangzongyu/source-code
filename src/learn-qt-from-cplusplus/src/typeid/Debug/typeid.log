@@ -1,0 +1,20 @@
+﻿生成启动时间为 2012-4-25 9:34:35。
+     1>项目“z:\examples\typeid\typeid.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\typeid.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include /I.\GeneratedFiles\Debug /ID:\QtSDK\Desktop\Qt\4.8.1\msvc2010\include\QtCore /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"z:\examples\typeid\\typeid.exe" /NOLOGO /LIBPATH:D:\QtSDK\Desktop\Qt\4.8.1\msvc2010\lib qtmaind.lib QtCored4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\typeid.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"z:\examples\typeid\typeid.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"z:\examples\typeid\typeid.lib" /MACHINE:X86 Debug\main.obj
+         typeid.vcxproj -> z:\examples\typeid\typeid.exe
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"z:\examples\typeid\\typeid.exe;#1" /manifest Debug\typeid.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         正在删除文件“Debug\typeid.unsuccessfulbuild”。
+         正在对“Debug\typeid.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“z:\examples\typeid\typeid.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.84
