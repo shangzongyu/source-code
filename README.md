@@ -89,6 +89,12 @@
 
 - [《C++11/14高级编程 Boost程序库探秘 - 第三版》](./C++11_14高级编程_Boost_程序库探秘_第三版)
 
+- [Modern C++ Tutorial: C++11/14/17/20 On the Fly](./modern-cpp-tutorial), Github 的[下载地址](https://github.com/changkun/modern-cpp-tutorial)
+
+  | 英文                                                              | 中文                                                                 |
+  | --------------------------------------------------------------- | ------------------------------------------------------------------ |
+  | <img src="./images/modern-cpp-tutorial-cover-2nd.png" width="300"/> | <img src="./images/modern-cpp-tutorial-cover-2nd-cn.png" width="300"/> |
+
 - [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
 
 - [《自己动手实现 Lua》](./luago-book)
