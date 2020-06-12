@@ -61,7 +61,21 @@
 
 ## 编程语言
 
-- [《Cpp Api Design》/《C++ API 设计》](./cpp-api-design)
+- [《Essential C++》](./essential-cpp) - 官方提供[下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
+
+  | 中文                                                   |
+  | ---------------------------------------------------- |
+  | <img src="./images/Essential-C++.jpeg" width="300"/> |
+
+- [《C++ Primer 第五版》](./CPP-Primer-5th-GCC_4_7_0) - 官方提供[下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
+
+  | 英文                                                                       | 中文                                                                         |
+  | ------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+  | <img src="./images/CPP-Primer-5th.jpg" width="300"/> | <img src="./images/CPP-Primer-5th-cn.jpeg" width="300"/> |
+
+- [《C++ Primer 第五版的答案》](./Cpp-Primer-5th-answer)
+
+- [《Cpp API Design》/《C++ API 设计》](./cpp-api-design)
 
   | 英文                                                   | 中文                                                      |
   | ---------------------------------------------------- | ------------------------------------------------------- |
@@ -73,21 +87,7 @@
   | --------------------------------------------------------------- | ------------------------------------------------------------------ |
   | <img src="./images/C++-Concurrency-in-Action.png" width="300"/> | <img src="./images/C++-Concurrency-in-Action-cn.jpg" width="300"/> |
 
-- [《C++ Primer 第五版》](./CPP-Primer-5th-GCC_4_7_0) - 官方提供[下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
-
-  | 英文                                                                       | 中文                                                                         |
-  | ------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-  | <img src="./images/CPP-Primer-5th.jpg" width="300"/> | <img src="./images/CPP-Primer-5th-cn.jpeg" width="300"/> |
-
-- [《C++ Primer 第五版的答案》](./Cpp-Primer-5th-answer)
-
-- [《Essential C++》](./essential-cpp) - 官方提供[下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
-
-  | 中文                                                   |
-  | ---------------------------------------------------- |
-  | <img src="./images/Essential-C++.jpeg" width="300"/> |
-
-- [《C++11_14高级编程 Boost程序库探秘 - 第三版》](./C++11_14高级编程_Boost_程序库探秘_第三版)
+- [《C++11/14高级编程 Boost程序库探秘 - 第三版》](./C++11_14高级编程_Boost_程序库探秘_第三版)
 
 - [《Java 核心编程第10版》](./corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
 
