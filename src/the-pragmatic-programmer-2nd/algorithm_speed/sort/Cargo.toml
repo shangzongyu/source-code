@@ -1,0 +1,10 @@
+[package]
+name = "sort"
+version = "0.1.0"
+authors = ["pragdave <dave@pragdave.me>"]
+edition = "2018"
+
+[dependencies]
+rand = "*"
+measure_time = "*"
+quickcheck = "*"

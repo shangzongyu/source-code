@@ -185,6 +185,12 @@
 
 ## 其他
 
+- [《The Pragmatic Programmer - your journey to mastery》/《程序员修炼之道 ：通向务实的最高境界 - 第二版》]
+
+  | 英文                                                    | 中文                                                       |
+  | ------------------------------------------------------- | ---------------------------------------------------------- |
+  | <img src="./images/the-pragmatic-programmer-2nd.jpeg" width="300"/> |  <img src="./images/the-pragmatic-programmer-2nd-cn.jpg" width="300"/> |
+
 - [《大话设计模式》](./大话设计模式)
 
   | 中文                                               |

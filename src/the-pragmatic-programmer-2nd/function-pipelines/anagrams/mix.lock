@@ -1,0 +1,3 @@
+%{
+  "comb": {:git, "https://github.com/tallakt/comb.git", "e6660924891d88d798494ab0c5adeefb29fae8b8", []},
+}

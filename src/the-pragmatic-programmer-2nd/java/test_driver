@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#
+# Simple shell-level test harness.
+#
+
+PKG=com.pragprog
+
+die()
+{
+  echo "TEST FAILED -- $*" 
+  exit 1
+}
+
+
+java $PKG.util.Assert okay >/dev/null 2>&1 || die Assert okay
+java $PKG.util.Assert fail >/dev/null 2>&1 && die Assert fail
+
+exit 0
