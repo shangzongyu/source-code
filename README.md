@@ -33,7 +33,7 @@
   | -------------------------------------------------------------------- |
   | <img src="./images/x86汇编语言-从实模式到保护模式.jpg" width="300"/> |
 
-- [《Computer Systems: A Programmer's Perspective, 3/E (CS:APP3e)》/《深入理解计算机操作系统 - 第三版》](./cs_app3e)[官方网站](http://csapp.cs.cmu.edu/3e/code.html)
+- [《Computer Systems: A Programmer's Perspective, 3/E (CS:APP3e)》/《深入理解计算机操作系统 - 第三版》](./src/cs_app3e)[官方网站](http://csapp.cs.cmu.edu/3e/code.html)
 
   | 英文                                                | 中文                                                   |
   | --------------------------------------------------- | ------------------------------------------------------ |
@@ -189,7 +189,7 @@
 
 ## 其他
 
-- [《The Pragmatic Programmer - your journey to mastery》/《程序员修炼之道 ：通向务实的最高境界 - 第二版》]
+- [《The Pragmatic Programmer - your journey to mastery》/《程序员修炼之道 ：通向务实的最高境界 - 第二版》](./src/the-pragmatic-programmer-2nd)
 
   | 英文                                                    | 中文                                                       |
   | ------------------------------------------------------- | ---------------------------------------------------------- |
