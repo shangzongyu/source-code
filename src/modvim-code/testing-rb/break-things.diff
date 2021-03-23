@@ -1,0 +1,11 @@
+--- a/lib/homophoner.rb
++++ b/lib/homophoner.rb
+@@ -5,7 +5,7 @@ class Homophoner
+     @dictionary = Hash.new
+     homophones.each do |wordlist|
+       wordlist.each do |word|
+-        @dictionary[word] = (wordlist - [word]).sort
++        @dictionary[word] = (wordlist - [word])
+       end
+     end
+   end

@@ -1,0 +1,26 @@
+{
+  "src/data/models/*/model.js": {
+    "type": "model",
+    "alternate": "src/data/models/{}/model-test.js"
+  },
+  "src/data/models/*/model-test.js": {
+    "type": "modelTest",
+    "alternate": "src/data/models/{}/model.js"
+  },
+  "src/data/models/*/adapter.js": {
+    "type": "adapter",
+    "alternate": "src/data/models/{}/adapter-test.js"
+  },
+  "src/data/models/*/adapter-test.js": {
+    "type": "adapterTest",
+    "alternate": "src/data/models/{}/adapter.js"
+  },
+  "src/data/models/*/serializer.js": {
+    "type": "serializer",
+    "alternate": "src/data/models/{}/serializer-test.js"
+  },
+  "src/data/models/*/serializer-test.js": {
+    "type": "serializer",
+    "alternate": "src/data/models/{}/serializer.js"
+  },
+}

@@ -1,0 +1,22 @@
+diff --git a/src/greeting.ts b/src/greeting.ts
+index 6afac08..c9e86fd 100644
+--- a/src/greeting.ts
++++ b/src/greeting.ts
+@@ -6,7 +6,7 @@ class Time {
+     let hour = this.timestamp.getHours();
+ 
+     if (hour < 12 && hour > 6) {
+-      message = "morning";
++      message = 1;
+     } else if (hour < 18) {
+       message = "afternoon"
+     } else if (hour < 21){
+@@ -20,7 +20,7 @@ class Time {
+ }
+ 
+ function greeting() {
+-  let now = new Time(new Date());
++  let now = new Time('now');
+   return `Good ${now.label()}`;
+ }
+ 

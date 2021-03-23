@@ -1,0 +1,11 @@
+--- a/Book/code/testing-jasmine/lib/homophoner.js
++++ b/Book/code/testing-jasmine/lib/homophoner.js
+@@ -7,7 +7,7 @@ function Homophoner(homophones) {
+ 
+   homophones.map((wordlist) => {
+     wordlist.map((word) => {
+-      this.dictionary[word] = _.sortBy(_.difference(wordlist, [word]));
++      this.dictionary[word] = _.difference(wordlist, [word]);
+     });
+   });
+ 

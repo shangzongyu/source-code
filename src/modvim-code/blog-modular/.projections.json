@@ -1,0 +1,6 @@
+{
+  "src/main.js": { "type": "main" },
+  "src/data/models/*/model.js": { "type": "model" },
+  "src/data/models/*/adapter.js": { "type": "adapter" },
+  "src/data/models/*/serializer.js": { "type": "serializer" }
+}

@@ -1,6 +1,6 @@
 # 源码
 
-> 一些书籍的源码整理
+> 一些书籍或者教程的源码整理
 
 - [源码](#源码)
   - [操作系统](#操作系统)
@@ -41,7 +41,7 @@
 
 ## 存储
 
-- [《Redis In Action》](./src/redis-in-action) - 官方提提供下载地址 <https://www.manning.com/books/redis-in-action>
+- [《Redis In Action》](./src/redis-in-action) - [官方提提供下载地址](https://www.manning.com/books/redis-in-action)
 
   | 英文                                                        |
   | ----------------------------------------------------------- |
@@ -53,7 +53,7 @@
   | ------------------------------------------------------------ |
   | <img src="./images/MySQL技术内幕：SQL编程.jpg" width="300"/> |
 
-- [《MySQL 必知必会》](./src/MySQL.Crash.Course) - 官方提供[下载地址](https://forta.com/books/0672327120/)
+- [《MySQL 必知必会》](./src/MySQL.Crash.Course) - [官方提供下载地址](https://forta.com/books/0672327120/)
 
   | 中文                                                     |
   | -------------------------------------------------------- |
@@ -61,13 +61,13 @@
 
 ## 编程语言
 
-- [《Essential C++》](./src/essential-cpp) - 官方提供[下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
+- [《Essential C++》](./src/essential-cpp) - [官方提供下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
 
   | 中文                                                 |
   | ---------------------------------------------------- |
   | <img src="./images/Essential-C++.jpeg" width="300"/> |
 
-- [《C++ Primer 第五版》](./src/CPP-Primer-5th-GCC_4_7_0) - 官方提供[下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
+- [《C++ Primer 第五版》](./src/CPP-Primer-5th-GCC_4_7_0) - [官方提供下载地址](http://www.informit.com/store/c-plus-plus-primer-9780321714114)
 
   | 英文                                                 | 中文                                                     |
   | ---------------------------------------------------- | -------------------------------------------------------- |
@@ -93,23 +93,27 @@
   | ------------------------------------------------------------------------------- |
   | <img src="./images/C++11_14高级编程_Boost_程序库探秘_第三版.jpeg" width="300"/> |
 
-- [Modern C++ Tutorial: C++11/14/17/20 On the Fly](./src/modern-cpp-tutorial), Github 的[下载地址](https://github.com/changkun/modern-cpp-tutorial)
+- [Modern C++ Tutorial: C++11/14/17/20 On the Fly](./src/modern-cpp-tutorial), [Github 的下载地址](https://github.com/changkun/modern-cpp-tutorial)
 
   | 英文                                                                | 中文                                                                   |
   | ------------------------------------------------------------------- | ---------------------------------------------------------------------- |
   | <img src="./images/modern-cpp-tutorial-cover-2nd.png" width="300"/> | <img src="./images/modern-cpp-tutorial-cover-2nd-cn.png" width="300"/> |
 
-- [《Java 核心编程第10版》](./src/corejava10) - 官方提供[下载地址](http://horstmann.com/corejava/)
+- [《Java 核心编程第10版》](./src/corejava10) - [官方提供下载地址](http://horstmann.com/corejava/)
 
 - [《自己动手实现 Lua》](./src/luago-book)
 
   <img src="./images/luago-book.jpg" width="300"/>
 
-- [《Rust 编程之道》](./src/tao-of-rust-codes) - 原始代码[Github](https://github.com/ZhangHanDong/tao-of-rust-codes)
+- [《Rust 编程之道》](./src/tao-of-rust-codes) - [原始代码地址](https://github.com/ZhangHanDong/tao-of-rust-codes)
 
   | 中文                                                    |
   | ------------------------------------------------------- |
   | <img src="./images/tao-of-rust-codes.jpg" width="300"/> |
+
+
+- [阮一峰的 JavaScript 教程](./src/ruanyifeng-javascript-tutorial) - [原始代码地址](https://github.com/wangdoc/javascript-tutorial)
+  - [教程地址](https://wangdoc.com/javascript/index.html)
 
 ## 网络
 
@@ -186,6 +190,14 @@
   | 英文                                                    | 中文                                                       |
   | ------------------------------------------------------- | ---------------------------------------------------------- |
   | <img src="./images/practice-vim-code.jpg" width="300"/> | <img src="./images/practice-vim-code-cn.jpg" width="300"/> |
+
+- [《Modern Vim: Craft Your Development Environment with Vim 8 and Neovim》](./src/modvim-code)
+
+  > [官方网站](https://pragprog.com/titles/modvim/modern-vim/)，提供了源码以及其他的资源。
+
+  | 英文                                                    |
+  | ------------------------------------------------------- |
+  | <img src="./images/modern-vim.png" width="300"/> |
 
 ## 其他
 

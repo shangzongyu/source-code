@@ -1,0 +1,1 @@
+{ "versions": [ "vim": { "repository": "https://github.com/vim/vim/", "homepage": "http://www.vim.org/", "version": { "major": "8", "minor": "0" } }, "neovim": { "repository": "https://github.com/neovim/neovim/", "homepage": "https://neovim.io/", "version": { "major": "0", "minor": "2" } } ] }

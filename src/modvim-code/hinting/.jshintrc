@@ -1,0 +1,7 @@
+{
+  "esversion": 5,
+  "asi": false,
+  "globals": {
+    "exports": true
+  }
+}

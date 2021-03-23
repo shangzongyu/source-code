@@ -1,0 +1,26 @@
+{
+  "app/models/*.js": {
+    "type": "model",
+    "alternate": "tests/unit/models/{}-test.js"
+  },
+  "tests/unit/models/*-test.js": {
+    "type": "modelTest",
+    "alternate": "app/models/{}.js"
+  },
+  "app/adapters/*.js": {
+    "type": "adapter",
+    "alternate": "tests/unit/adapters/{}-test.js"
+  },
+  "tests/unit/adapters/*-test.js": {
+    "type": "adapterTest",
+    "alternate": "app/adapters/{}.js"
+  },
+  "app/serializers/*.js": {
+    "type": "serializer",
+    "alternate": "tests/unit/serializers/{}-test.js"
+  },
+  "tests/unit/serializers/*-test.js": {
+    "type": "serializerTest",
+    "alternate": "app/serializers/{}.js"
+  },
+}

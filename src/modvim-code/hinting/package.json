@@ -1,0 +1,15 @@
+{
+  "name": "date-in",
+  "version": "1.0.0",
+  "description": "Return a string representing the date in a specified number of days, months, or years.",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Drew Neil",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  }
+}

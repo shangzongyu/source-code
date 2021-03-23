@@ -1,0 +1,16 @@
+{
+  "name": "test-jasmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "lodash-node": "^3.10.2"
+  }
+}

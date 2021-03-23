@@ -1,0 +1,6 @@
+{
+  "app/app.js": { "type": "main" },
+  "app/models/*.js": { "type": "model" },
+  "app/adapters/*.js": { "type": "adapter" },
+  "app/serializers/*.js": { "type": "serializer" }
+}
