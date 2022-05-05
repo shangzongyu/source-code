@@ -7,4 +7,5 @@ GPATH
 #
 .vscode
 .DS_Store
+./pkg
 src/.DS_Store

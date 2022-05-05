@@ -2,44 +2,9 @@
 [![crates.io](https://meritbadge.herokuapp.com/tao-of-rust)](https://crates.io/crates/tao-of-rust)
 [![Released API docs](https://docs.rs/tao-of-rust/badge.svg)](https://docs.rs/tao-of-rust)
 
-### English Version 
+### English Version
 
-[The Tao of Rust:  Table of Contents](./tao_of_rust_english.md)
-
-### 豆瓣书评
-
-希望大家看完之后，可以给个评价。
-
-[《Rust编程之道》豆瓣书评](https://book.douban.com/subject/30418895/) 
-
-### 购买地址：各大电商平台
-
-- [电子工业出版社京东店](https://item.jd.com/12479415.html)
-<!-- - [作者签名版 - 混沌小店购买](https://weidian.com/?userid=1165436513&wfr=c&ifr=shopdetail&source=shop&sfr=app) -->
-
----
-
-![img4](images/rustbook.jpg)
-
-# 《Rust编程之道》随书源码
-
-本书现在已出版。
-
-**跟进Rust 2018最新特性！！**
-
-**跟进Rust 2018最新特性！！**
-
-**跟进Rust 2018最新特性！！**
-
-说明：本仓库代码暂时不接受任何PR，因为很多都是随书源码案例，其中代码有专门的演示作用。如有异议，可以提交issues讨论。
-
-_注意：本书代码的平台是Linux或macOS_
-
-### 书籍勘误说明
-
-1. 提交issues
-2. 表明具体的「页码」、「行数」和「出错」信息
-3. 积极勘误者将获得Rust勋章一枚
+[The Tao of Rust:  Table of Contents](./README_en.md)
 
 ### Rust版本依赖：
 
@@ -54,7 +19,7 @@ $ cargo doc --target-dir ./
 
 ### 使用说明：
 
-```shell
+```sh
 $ git clone https://github.com/ZhangHanDong/tao-of-rust-codes.git
 $ cd tao-of-rust-codes
 $ cargo doc
@@ -71,12 +36,7 @@ or：
 
 ### 图示
 
-![img1](images/0.png)
-![img2](images/1.png)
-![img3](images/2.png)
-
 点击Run，跳转到[play.rust-lang.org](https://play.rust-lang.org)
-![img4](images/run.png)
 
 ### 本书完整目录
 

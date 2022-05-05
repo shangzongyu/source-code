@@ -23,7 +23,7 @@
 
 ## Chapter 2: Language Essentials
 
-### 2.1 The basic structure of the Rust Language 
+### 2.1 The basic structure of the Rust Language
 
 - 2.1.1 Language Specification
 - 2.1.2 Compiler
@@ -143,11 +143,11 @@
 - 4.1.2 Heap
 - 4.1.3 Memory layout
 
-### 4.2 Resource Management 
+### 4.2 Resource Management
 in Rust
 
 - 4.2.1 Variables and Functions
-- 4.2.2 Smart Pointer and RAII 
+- 4.2.2 Smart Pointer and RAII
 - 4.2.3 Memory Leakage and Memory Safety
 - 4.2.4 Composite type of memory allocation and layout
 
@@ -259,7 +259,7 @@ in Rust
 
 ### 9.2 Eliminate the failure
 
-### 9.3  Layer-based 
+### 9.3  Layer-based
 error handling
 
 - 9.3.1 Optional Values : Option<T>
@@ -305,7 +305,8 @@ error handling
 - 11.1.2 Event Driven, Asynchronous Callbacks, and Coroutines
 - 11.1.3 Thread Safety
 
-### 11.2 Multi-threading  
+### 11.2 Multi-threading
+
 Concurrent Programming
 
 - 11.2.1 Thread Management
@@ -361,7 +362,7 @@ Concurrent Programming
 - 13.1.3 Union Type
 - 13.1.4 Dereferencing raw pointers
 
-### 13.2 Safe abstraction 
+### 13.2 Safe abstraction
 based on Unsafe
 
 - 13.2.1 Raw pointers
@@ -371,9 +372,9 @@ based on Unsafe
 - 13.2.5 NonNull<T> pointer
 - 13.2.6 Unsafe and Panic safety
 - 13.2.7 Heap Memory Allocation
-- 13.2.8  Three Principles of Mixed Code‘s Memory Safety Architecture 
+- 13.2.8  Three Principles of Mixed Code‘s Memory Safety Architecture
 
-### 13.3 Interacting with 
+### 13.3 Interacting with
 other languages
 
 - 13.3.1 Foreign Function Interface
@@ -383,7 +384,7 @@ other languages
 ### 13.4 Rust and WebAssembly
 
 - 13.4.1 WebAssembly Highlights
-- 13.4.2 Developing WebAssembly with Rust 
+- 13.4.2 Developing WebAssembly with Rust
 - 13.4.3 Building a WebAssembly Development Ecosystem
 - 13.5 Summary
 
