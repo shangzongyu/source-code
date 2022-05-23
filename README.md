@@ -46,6 +46,9 @@
 
   | <img src="./images/MySQL.Crash.Course.jpg" width="300"/> |
 
+- [《MySQL Cookbook Fourth Edition》](./src/mysqlcookbook) - [Github 地址](https://github.com/svetasmirnova/mysqlcookbook)
+
+  | <img src="./images/MySQL Cookbook Fourth Edition.jpg" width="300"/> |
 ## 编程语言
 
 - [《Essential C++》](./src/essential-cpp) - [官方提供下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)

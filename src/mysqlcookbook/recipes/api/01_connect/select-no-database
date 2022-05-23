@@ -1,0 +1,53 @@
+#@ _JAVA_DB_
+conn = DriverManager.getConnection (
+            "jdbc:mysql://localhost/cookbook", // URL
+            "cbuser",                          // username
+            "cbpass");                         // password
+#@ _JAVA_DB_
+#@ _JAVA_NO_DB_
+conn = DriverManager.getConnection (
+            "jdbc:mysql://localhost/", // URL
+            "cbuser",                  // username
+            "cbpass");                 // password
+#@ _JAVA_NO_DB_
+#@ _RUBY_DB_
+dbh = DBI.connect("DBI:Mysql:host=localhost;database=cookbook",
+                  "cbuser", "cbpass")
+#@ _RUBY_DB_
+#@ _RUBY_NO_DB_
+dbh = DBI.connect("DBI:Mysql:host=localhost",
+                  "cbuser", "cbpass")
+#@ _RUBY_NO_DB_
+#@ _PHP_DB_
+$dsn = "mysql:host=localhost;dbname=cookbook";
+$dbh = new PDO ($dsn, "cbuser", "cbpass");
+#@ _PHP_DB_
+#@ _PHP_NO_DB_
+$dsn = "mysql:host=localhost";
+$dbh = new PDO ($dsn, "cbuser", "cbpass");
+#@ _PHP_NO_DB_
+#@ _PERL_DB_
+my $dbh = DBI->connect ("DBI:mysql:cookbook;host=localhost",
+                        "cbuser", "cbpass");
+#@ _PERL_DB_
+#@ _PERL_NO_DB_
+my $dbh = DBI->connect ("DBI:mysql:;host=localhost",
+                        "cbuser", "cbpass");
+#@ _PERL_NO_DB_
+#@ _PYTHON_DB_
+conn = mysql.connector.connect (database = "cookbook",
+                                host = "localhost",
+                                user = "cbuser",
+                                password = "cbpass")
+#@ _PYTHON_DB_
+#@ _PYTHON_NO_DB1_
+conn = mysql.connector.connect (database = "",
+                                host = "localhost",
+                                user = "cbuser",
+                                password = "cbpass")
+#@ _PYTHON_NO_DB1_
+#@ _PYTHON_NO_DB2_
+conn = mysql.connector.connect (host = "localhost",
+                                user = "cbuser",
+                                password = "cbpass")
+#@ _PYTHON_NO_DB2_

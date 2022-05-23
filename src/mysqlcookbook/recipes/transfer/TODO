@@ -1,0 +1,2 @@
+load_diag.pl: makes assumption that TIMESTAMP cannot contain NULL, which
+is no longer true.

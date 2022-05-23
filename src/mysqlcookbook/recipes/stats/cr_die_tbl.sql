@@ -1,0 +1,15 @@
+# cr_die_tbl.sql
+
+DROP TABLE IF EXISTS die;
+CREATE TABLE die
+(
+  num   TINYINT
+)
+;
+
+INSERT INTO die (num) VALUES(1),(2),(3),(4),(5),(6);
+
+SELECT num FROM die ORDER BY RAND() LIMIT 1;
+SELECT num FROM die ORDER BY RAND() LIMIT 1;
+SELECT num FROM die ORDER BY RAND() LIMIT 1;
+SELECT num FROM die ORDER BY RAND() LIMIT 1;

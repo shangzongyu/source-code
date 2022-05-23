@@ -1,0 +1,11 @@
+{"arms": 2, "legs": 2, "thing": "human" } 
+{"arms": 0, "legs": 6, "thing": "insect" } 
+{"arms": 10, "legs": 0, "thing": "squid" } 
+{"arms": 0, "legs": 0, "thing": "fish" } 
+{"arms": 0, "legs": 99, "thing": "centipede" } 
+{"arms": 0, "legs": 4, "thing": "table" } 
+{"arms": 2, "legs": 4, "thing": "armchair" } 
+{"arms": 1, "legs": 0, "thing": "phonograph" } 
+{"arms": 0, "legs": 3, "thing": "tripod" } 
+{"arms": 2, "legs": 1, "thing": "Peg Leg Pete" } 
+{"arms": null, "legs": null, "thing": "space alien" }

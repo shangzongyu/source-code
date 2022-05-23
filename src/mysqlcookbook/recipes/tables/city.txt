@@ -1,0 +1,50 @@
+Alabama	Montgomery	Birmingham
+Alaska	Juneau	Anchorage
+Arizona	Phoenix	Phoenix
+Arkansas	Little Rock	Little Rock
+California	Sacramento	Los Angeles
+Colorado	Denver	Denver
+Connecticut	Hartford	Bridgeport
+Delaware	Dover	Wilmington
+Florida	Tallahassee	Jacksonville
+Georgia	Atlanta	Atlanta
+Hawaii	Honolulu	Honolulu
+Idaho	Boise	Boise
+Illinois	Springfield	Chicago
+Indiana	Indianapolis	Indianapolis
+Iowa	Des Moines	Des Moines
+Kansas	Topeka	Wichita
+Kentucky	Frankfort	Louisville
+Louisiana	Baton Rouge	New Orleans
+Maine	Augusta	Portland
+Maryland	Annapolis	Baltimore
+Massachusetts	Boston	Boston
+Michigan	Lansing	Detroit
+Minnesota	St. Paul	Minneapolis
+Mississippi	Jackson	Jackson
+Missouri	Jefferson City	Kansas City
+Montana	Helena	Billings
+Nebraska	Lincoln	Omaha
+Nevada	Carson City	Las Vegas
+New Hampshire	Concord	Manchester
+New Jersey	Trenton	Newark
+New Mexico	Santa Fe	Albuquerque
+New York	Albany	New York City
+North Carolina	Raleigh	Charlotte
+North Dakota	Bismarck	Fargo
+Ohio	Columbus	Columbus
+Oklahoma	Oklahoma City	Oklahoma City
+Oregon	Salem	Portland
+Pennsylvania	Harrisburg	Philadelphia
+Rhode Island	Providence	Providence
+South Carolina	Columbia	Columbia
+South Dakota	Pierre	Sioux Falls
+Tennessee	Nashville	Memphis
+Texas	Austin	Houston
+Utah	Salt Lake City	Salt Lake City
+Vermont	Montpelier	Burlington
+Virginia	Richmond	Virginia Beach
+Washington	Olympia	Seattle
+West Virginia	Charleston	Charleston
+Wisconsin	Madison	Milwaukee
+Wyoming	Cheyenne	Cheyenne

@@ -1,0 +1,16 @@
+[client]
+user=cbuser
+#host=localhost
+
+[cookbook]
+password=cbpass
+
+[mysql]
+no-auto-rehash
+
+[user]
+[password]
+[host]
+password=cbpass
+host=localhost
+database=cookbook

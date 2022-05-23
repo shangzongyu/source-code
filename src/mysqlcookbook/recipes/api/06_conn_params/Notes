@@ -1,0 +1,7 @@
+For mysql_read_default_{file,group}:
+
+If you specify a file, only that file is read.
+If you specify a group, the client group and that group are read from
+the standard set of files.
+If you specify both a file and a group, the client group and that group
+are read but only from that file.

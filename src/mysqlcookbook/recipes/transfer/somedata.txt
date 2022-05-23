@@ -1,0 +1,7 @@
+c1	name1	c3	c4	72	c6	c7	c8	197	c10	1/3/97	c12
+c1	name2	c3	c4	60	c6	c7	c8	115	c10	4/6/82	c12
+c1	name3	c3	c4	65	c6	c7	c8	171	c10	5/9/67	c12
+c1	name4	c3	c4	62	c6	c7	c8	167	c10	3/13/99	c12
+c1	name5	c3	c4	68	c6	c7	c8	181	c10	10/12/01	c12
+c1	name6	c3	c4	75	c6	c7	c8	250	c10	7/4/76	c12
+c1	name7	c3	c4	64	c6	c7	c8	134	c10	9/30/98	c12

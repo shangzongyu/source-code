@@ -1,0 +1,68 @@
+#@ _CONTENT_TYPES_
+/^$/            Empty value
+/./             Nonempty value
+/^\s*$/         Whitespace, possibly empty
+/^\s+$/         Nonempty whitespace
+/\S/            Nonempty, and not just whitespace
+/^\d+$/         Digits only, nonempty
+/^[a-z]+$/i     Alphabetic characters only (case insensitive), nonempty
+/^\w+$/         Alphanumeric or underscore characters only, nonempty
+#@ _CONTENT_TYPES_
+
+#@ _NUMERIC_TYPES_
+/^\d+$/                         Unsigned integer
+/^-?\d+$/                       Negative or unsigned integer
+/^[-+]?\d+$/                    Signed or unsigned integer
+/^[-+]?(\d+(\.\d*)?|\.\d+)$/    Floating-point number
+#@ _NUMERIC_TYPES_
+
+#@ _ZIP_ONLY_
+/^\d{5}$/               Zip code, five digits only
+#@ _ZIP_ONLY_
+#@ _ZIPPLUS4_
+/^\d{5}-\d{4}$/         Zip+4 code
+#@ _ZIPPLUS4_
+#@ _ZIP_BOTH_
+/^\d{5}(-\d{4})?$/      Zip or Zip+4 code
+#@ _ZIP_BOTH_
+
+#@ _STRICT_ISO_
+/^\d{4}-\d{2}-\d{2}$/
+#@ _STRICT_ISO_
+#@ _ISO_DASH_OR_SLASH_DELIMITER_1_
+/^\d{4}[-\/]\d{2}[-\/]\d{2}$/
+#@ _ISO_DASH_OR_SLASH_DELIMITER_1_
+#@ _ISO_DASH_OR_SLASH_DELIMITER_2_
+m|^\d{4}[-/]\d{2}[-/]\d{2}$|
+#@ _ISO_DASH_OR_SLASH_DELIMITER_2_
+#@ _ISO_NON_DIGIT_DELIMITER_
+/^\d{4}\D\d{2}\D\d{2}$/
+#@ _ISO_NON_DIGIT_DELIMITER_
+#@ _THREE_DIGIT_SEQUENCES_
+/^\d+\D\d+\D\d+$/
+#@ _THREE_DIGIT_SEQUENCES_
+#@ _2_4YY_1_2M_1_2D_
+/^\d{2,4}?\D\d{1,2}\D\d{1,2}$/
+#@ _2_4YY_1_2M_1_2D_
+#@ _MM_DD_YY_
+/^\d{2}-\d{2}-\d{2}$/
+#@ _MM_DD_YY_
+#@ _HH_MM_SS_
+/^\d{2}:\d{2}:\d{2}$/
+#@ _HH_MM_SS_
+#@ _HH_MM_OPTIONAL_SS_
+/^\d{1,2}:\d{2}(:\d{2})?$/
+#@ _HH_MM_OPTIONAL_SS_
+
+#@ _SIMPLE_EMAIL_1_
+/.@./
+#@ _SIMPLE_EMAIL_1_
+#@ _SIMPLE_EMAIL_2_
+/^[^@ ]+@[^@ ]+$/
+#@ _SIMPLE_EMAIL_2_
+#@ _EMAIL_WITH_DOMAIN_
+/^[^@ ]+@[^@ .]+\.[^@ .]+/
+#@ _EMAIL_WITH_DOMAIN_
+#@ _URL_PROTOCOL_
+m#^(http://|ftp://|mailto:)#i
+#@ _URL_PROTOCOL_
