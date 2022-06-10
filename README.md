@@ -14,6 +14,7 @@
   - [其他](#其他)
 
 ## 操作
+
 - [《Orange‘s 一个操作系统的实现》](./src/Orange‘s一个操作系统的实现)
 
   <img src="./images/Orange‘s一个操作系统的实现.jpg" width="300"/>
@@ -214,3 +215,7 @@
 - [《Black Hat Rust》](./src/black-hat-rust)
 
   <img src="./images/black-hat-rust.png" width="300"/>
+
+- [《GPU 精粹三部》](https://github.com/shangzongyu/GPU-Gems-Book-Source-Code)
+
+  <img src="https://raw.githubusercontent.com/shangzongyu/GPU-Gems-Book-Source-Code/master/Media/repo-cover.jpg"  width="300"/>
