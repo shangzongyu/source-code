@@ -112,6 +112,10 @@
 
   <img src="./images/the-go-programming-language.png" width="300"/>
 
+- [《On Java 8》](./src/OnJava8-Examples) - [Github 代码地址](https://github.com/BruceEckel/OnJava8-Examples)/[官网](https://www.onjava8.com)
+
+  <img src="./images/on-java8.png" width="300"/>
+
 ## 网络
 
 - [《Compute-Network-Top-Down-Approach》/《计算机网络-自定向下的方法-第六版》](./src/Compute-Network-Top-Down-Approach)
@@ -222,3 +226,7 @@
 - [《GPU 精粹三部》](https://github.com/shangzongyu/GPU-Gems-Book-Source-Code)
 
   <img src="https://raw.githubusercontent.com/shangzongyu/GPU-Gems-Book-Source-Code/master/Media/repo-cover.jpg"  width="300"/>
+
+- [《gRPC - Up & Running》](./src/grpc-up-and-running) - [Github 地址](https://github.com/grpc-up-and-running/samples)
+
+    <img src="./images/grpc-up-and-running.png" width="300"/>
