@@ -11,6 +11,7 @@
   - [Windows](#windows)
   - [云计算](#云计算)
   - [编辑器](#编辑器)
+  - [性能优化](#性能优化)
   - [其他](#其他)
 
 ## 操作
@@ -198,6 +199,11 @@
   > [官方网站](https://pragprog.com/titles/modvim/modern-vim/)，提供了源码以及其他的资源。
 
   <img src="./images/modern-vim.png" width="300"/>
+
+## 性能优化
+
+- [《Linux Observability with BPF》](./src/linux-observability-with-bpf)  - [Github 地址](https://github.com/bpftools/linux-observability-with-bpf)
+<img src="./images/linux-observability-with-bpf.png" width="300"/>
 
 ## 其他
 
