@@ -12,6 +12,7 @@
   - [云计算](#云计算)
   - [编辑器](#编辑器)
   - [性能优化](#性能优化)
+  - [eBPF](#eBPF)
   - [其他](#其他)
 
 ## 操作
@@ -35,6 +36,8 @@
   <img src="./images/csapp3e-cover-cn.jpg" width="300"/>
 
 ## 存储
+
+- 《Redis 设计与实现》
 
 - [《Redis In Action》](./src/redis-in-action) - [官方提提供下载地址](https://www.manning.com/books/redis-in-action)
 
@@ -202,8 +205,12 @@
 
 ## 性能优化
 
+## eBPF
+
 - [《Linux Observability with BPF》](./src/linux-observability-with-bpf)  - [Github 地址](https://github.com/bpftools/linux-observability-with-bpf)
 <img src="./images/linux-observability-with-bpf.png" width="300"/>
+- [《Learning eBPF》](./src/learning-ebpf)  - [Github 地址](https://github.com/lizrice/learning-ebpf)
+<img src="./images/learning-ebpf-cover.png" width="300"/>
 
 ## 其他
 
