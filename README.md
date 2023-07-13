@@ -12,7 +12,7 @@
   - [云计算](#云计算)
   - [编辑器](#编辑器)
   - [性能优化](#性能优化)
-  - [eBPF](#eBPF)
+  - [eBPF](#ebpf)
   - [其他](#其他)
 
 ## 操作
@@ -119,6 +119,10 @@
 - [《On Java 8》](./src/OnJava8-Examples) - [Github 代码地址](https://github.com/BruceEckel/OnJava8-Examples)/[官网](https://www.onjava8.com)
 
   <img src="./images/on-java8.png" width="300"/>
+
+- [《Go 语言设计与实现》](./src/go-internal)
+
+  <img src="./images/golang-internal-cover.webp" width="300"/>
 
 ## 网络
 
