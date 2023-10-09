@@ -54,6 +54,7 @@
 - [《MySQL Cookbook Fourth Edition》](./src/mysqlcookbook) - [Github 地址](https://github.com/svetasmirnova/mysqlcookbook)
 
   | <img src="./images/MySQL Cookbook Fourth Edition.jpg" width="300"/> |
+
 ## 编程语言
 
 - [《Essential C++》](./src/essential-cpp) - [官方提供下载地址](http://www.informit.com/store/essential-c-plus-plus-9780201485189)
@@ -123,6 +124,10 @@
 - [《Go 语言设计与实现》](./src/go-internal)
 
   <img src="./images/golang-internal-cover.webp" width="300"/>
+
+- [《百万在线：大型游戏服务端开发》](./src/million_game_server)
+
+  <img src="./src/million_game_server/web/zcover_big.jpg" width="300"/>
 
 ## 网络
 
