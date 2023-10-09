@@ -125,7 +125,7 @@
 
   <img src="./images/golang-internal-cover.webp" width="300"/>
 
-- [《百万在线：大型游戏服务端开发》](./src/million_game_server)
+- [《百万在线：大型游戏服务端开发》](./src/million_game_server) - [Github 代码地址](https://github.com/luopeiyu/million_game_server)
 
   <img src="./src/million_game_server/web/zcover_big.jpg" width="300"/>
 
@@ -185,7 +185,8 @@
   - Linux 内核版本 3.2.44
   - glic 的版本
 
-- [《深入理解Linux网络》](./src/deep_linux_network_tests)
+- [《深入理解Linux网络 - 修炼底层内功、掌握高性能原理》](./src/deep_linux_network_tests) - [Github 地址](https://github.com/yanfeizhang/deep_linux_network_tests)
+
   ![](./images/coder-kung-fu.png)
 
 ## Windows
@@ -214,12 +215,15 @@
 
 ## 性能优化
 
-## eBPF
+### eBPF
 
-- [《Linux Observability with BPF》](./src/linux-observability-with-bpf)  - [Github 地址](https://github.com/bpftools/linux-observability-with-bpf)
-<img src="./images/linux-observability-with-bpf.png" width="300"/>
+- [《Linux Observability with BPF》](./src/linux-observability-with-bpf) - [Github 地址](https://github.com/bpftools/linux-observability-with-bpf)
+
+  <img src="./images/linux-observability-with-bpf.png" width="300"/>
+
 - [《Learning eBPF》](./src/learning-ebpf)  - [Github 地址](https://github.com/lizrice/learning-ebpf)
-<img src="./images/learning-ebpf-cover.png" width="300"/>
+
+  <img src="./images/learning-ebpf-cover.png" width="300"/>
 
 ## 其他
 
