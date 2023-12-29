@@ -264,12 +264,12 @@
 
     <img src="./images/grpc-up-and-running.png" width="300"/>
 
-- [《Writing A Compiler In Go/用 Go 语言自制解释器》](./src/wacig_code_1.2)，国内叫做**彩猴书**
+- [《Writing A Compiler In Go/用 Go 语言自制解释器》](./src/wacig_code_1.2)，国内叫做**金猴书**
 
     <img src="./images/writing-an-compiler-in-go.png" width="300"/>
     <img src="./images/writing-an-compiler-in-go-cn.jpg" width="300"/>
 
-- [《Writing An Interpreter In Go/用 Go 语言自制编译器》](./src/waiig_code_1.3)，国内叫做**金猴书**
+- [《Writing An Interpreter In Go/用 Go 语言自制编译器》](./src/waiig_code_1.3)，国内叫做**彩猴书**
 
     <img src="./images/writing-an-interpreter-in-go.png" width="300"/>
     <img src="./images/writing-an-interpreter-in-go-cn.jpg" width="300"/>>
