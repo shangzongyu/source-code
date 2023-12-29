@@ -12,7 +12,8 @@
   - [云计算](#云计算)
   - [编辑器](#编辑器)
   - [性能优化](#性能优化)
-  - [eBPF](#ebpf)
+    - [eBPF](#ebpf)
+  - [AI](#ai)
   - [其他](#其他)
 
 ## 操作
@@ -224,6 +225,12 @@
 - [《Learning eBPF》](./src/learning-ebpf)  - [Github 地址](https://github.com/lizrice/learning-ebpf)
 
   <img src="./images/learning-ebpf-cover.png" width="300"/>
+
+## AI
+
+- [《GPT图解》](./src/GPT图解)
+
+  <img src="./images/ChatGPT图解.jpg" width="300"/>
 
 ## 其他
 
