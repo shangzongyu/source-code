@@ -84,7 +84,7 @@
 
 - [《C++11/14 高级编程 Boost 程序库探秘 - 第三版》](./src/C++11_14高级编程_Boost_程序库探秘_第三版)
 
-  <img src="./images/C++11_14高级编程_Boost_程序库探秘_第三版.jpeg" width=“300”/>
+  <img src="./images/C++11_14高级编程_Boost_程序库探秘_第三版.jpeg" width="300"/>
 
 - [Modern C++ Tutorial：C++11/14/17/20 On the Fly](./src/modern-cpp-tutorial)，[Github 代码地址](https://github.com/changkun/modern-cpp-tutorial)
 
@@ -102,6 +102,9 @@
 
   <img src="./images/corejava12-02.png" width="300"/>
 
+- [《On Java 8》](./src/OnJava8-Examples) - [Github 代码地址](https://github.com/BruceEckel/OnJava8-Examples)/[官网](https://www.onjava8.com)
+
+  <img src="./images/on-java8.png" width="300"/>
 - [《自己动手实现 Lua》](./src/luago-book)
 
   <img src="./images/luago-book.jpg" width="300"/>
@@ -119,9 +122,9 @@
 
   <img src="./images/the-go-programming-language.png" width="300"/>
 
-- [《On Java 8》](./src/OnJava8-Examples) - [Github 代码地址](https://github.com/BruceEckel/OnJava8-Examples)/[官网](https://www.onjava8.com)
+- [《100 Go Mistakes and How to Avoid Them》](./src/100-go-mistakes) - [原始代码地址](https://github.com/teivah/100-go-mistakes)
 
-  <img src="./images/on-java8.png" width="300"/>
+  <img src="./images/100-go-mistakes-and-how-to-avoid-them.png" width="300"/>
 
 - [《Go 语言设计与实现》](./src/go-internal)
 

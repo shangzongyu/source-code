@@ -1,18 +1,18 @@
---±ØĞëÅäÖÃ
-thread = 8                          --ÆôÓÃ¶àÉÙ¸ö¹¤×÷Ïß³Ì
-cpath = "./cservice/?.so"           --ÓÃC±àĞ´µÄ·şÎñÄ£¿éµÄÎ»ÖÃ
-bootstrap = "snlua bootstrap"       --£¨¹Ì¶¨£©Æô¶¯µÄµÚÒ»¸ö·şÎñ
+--å¿…é¡»é…ç½®
+thread = 8                          --å¯ç”¨å¤šå°‘ä¸ªå·¥ä½œçº¿ç¨‹
+cpath = "./cservice/?.so"           --ç”¨Cç¼–å†™çš„æœåŠ¡æ¨¡å—çš„ä½ç½®
+bootstrap = "snlua bootstrap"       --ï¼ˆå›ºå®šï¼‰å¯åŠ¨çš„ç¬¬ä¸€ä¸ªæœåŠ¡
 
---bootstrapÅäÖÃÏî
-start = "main"                      --Ö÷·şÎñÈë¿Ú
-harbor = 0                          --£¨¹Ì¶¨£©²»Ê¹ÓÃÖ÷´Ó½ÚµãÄ£Ê½
+--bootstrapé…ç½®é¡¹
+start = "main"                      --ä¸»æœåŠ¡å…¥å£
+harbor = 0                          --ï¼ˆå›ºå®šï¼‰ä¸ä½¿ç”¨ä¸»ä»èŠ‚ç‚¹æ¨¡å¼
 
---luaÅäÖÃÏî£¨ÔİÊ±¹Ì¶¨£©
+--luaé…ç½®é¡¹ï¼ˆæš‚æ—¶å›ºå®šï¼‰
 lualoader = "./lualib/loader.lua"
 luaservice = "./service/?.lua;".."./test/?.lua;".."./examples/?.lua;".."./test/?/init.lua"
 lua_path = "./lualib/?.lua;" .. "./lualib/?/init.lua"
 lua_cpath = "./luaclib/?.so"
 
---ºóÌ¨Ä£Ê½£¨±ØÒªÊ±¿ªÆô£©
+--åå°æ¨¡å¼ï¼ˆå¿…è¦æ—¶å¼€å¯ï¼‰
 --daemon = "./skynet.pid"
 --logger = "./userlog"
