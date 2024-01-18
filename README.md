@@ -130,6 +130,10 @@
 
   <img src="./images/golang-internal-cover.webp" width="300"/>
 
+- [《Go 语言高级编程》](./src/anvanced-go-programming)
+
+  <img src="./images/anvanced-go-programming.jpg" width="300"/>
+
 - [《百万在线：大型游戏服务端开发》](./src/million_game_server) - [Github 代码地址](https://github.com/luopeiyu/million_game_server)
 
   <img src="./src/million_game_server/web/zcover_big.jpg" width="300"/>
