@@ -113,12 +113,13 @@
 
   <img src="./images/tao-of-rust-codes.jpg" width="300"/>
 
-- [阮一峰的 JavaScript 教程](./src/ruanyifeng-javascript-tutorial) - [原始代码地址](https://github.com/wangdoc/javascript-tutorial)
+- [阮一峰的 JavaScript 教程](./src/ruanyifeng-javascript-tutorial)
+  - [原始代码地址](https://github.com/wangdoc/javascript-tutorial)
   - [教程地址](https://wangdoc.com/javascript/index.html)
 
-- [The Go Programming Language](./src/gopl.io) - [Github 代码地址](https://github.com/adonovan/gopl.io/)
-
-  官方地址：：<http://www.gopl.io/>
+- [The Go Programming Language](./src/gopl.io)
+  - Github: <https://github.com/adonovan/gopl.io/>
+  - 官方地址：<http://www.gopl.io/>
 
   <img src="./images/the-go-programming-language.png" width="300"/>
 
@@ -131,8 +132,13 @@
   <img src="./images/golang-internal-cover.webp" width="300"/>
 
 - [《Go 语言高级编程》](./src/anvanced-go-programming)
+  - Github: <https://github.com/RainbowMango/GoExpertProgramming>
 
   <img src="./images/anvanced-go-programming.jpg" width="300"/>
+
+  - [《Go 专家编程》](./src/GoExpertProgramming)
+
+  <img src="./images/GoExpertProgramming.png" width="300"/>
 
 - [《百万在线：大型游戏服务端开发》](./src/million_game_server) - [Github 代码地址](https://github.com/luopeiyu/million_game_server)
 
