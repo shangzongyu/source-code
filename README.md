@@ -84,7 +84,7 @@
 
 - [《C++11/14 高级编程 Boost 程序库探秘 - 第三版》](./src/C++11_14高级编程_Boost_程序库探秘_第三版)
 
-  <img src=“./images/C++11_14 高级编程 _Boost_ 程序库探秘 _ 第三版。jpeg” width=“300”/>
+  <img src="./images/C++11_14高级编程_Boost_程序库探秘_第三版.jpeg" width=“300”/>
 
 - [Modern C++ Tutorial：C++11/14/17/20 On the Fly](./src/modern-cpp-tutorial)，[Github 代码地址](https://github.com/changkun/modern-cpp-tutorial)
 
