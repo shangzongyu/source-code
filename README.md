@@ -190,7 +190,7 @@
 
   <img src="./images/ldd3.jpg" width="300"/>
 
-   <img src="./images/ldd3-cn.jpg" width="300"/>
+  <img src="./images/ldd3-cn.jpg" width="300"/>
 
 - [《Linux 内核 0.11 完全注释》](./src/linux-kernel-0.11)
 
@@ -245,6 +245,12 @@
 - [《GPT 图解》](./src/GPT图解)
 
   <img src="./images/ChatGPT图解.jpg" width="300"/>
+
+- [《大模型应用开发极简入门：基于 ChatGPT-4 和 ChatGPT》](./src/gpt_examples-openai1.3/) - [Github 地址](https://github.com/malywut/gpt_examples/tree/openai1.3)
+
+  <img src="./images/Developing-Apps-with-GPT-4-and ChatGPT-CN.jpg" width="300"/>
+
+  <img src="./images/Developing-Apps-with-GPT-4-and ChatGPT-EN.png" width="300"/>
 
 ## 其他
 
