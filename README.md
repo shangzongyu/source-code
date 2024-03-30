@@ -180,7 +180,7 @@
 
   <img src="./images/TLPI-cn.jpg" width="300"/>
 
-- [《Linux 程序设计第 4 版》](./beginning-linux-programming-4th-edition)
+- [《Linux 程序设计第 4 版》](./src/beginning-linux-programming-4th-edition)
 
   <img src="./images/beginning-linux-programming-4th-edition.jpeg" width="300"/>
 
