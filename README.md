@@ -3,7 +3,7 @@
 > 一些书籍或者教程的源码整理
 
 - [源码](#源码)
-  - [操作](#操作)
+  - [操作系统](#操作系统)
   - [存储](#存储)
   - [编程语言](#编程语言)
   - [网络](#网络)
@@ -16,7 +16,7 @@
   - [AI](#ai)
   - [其他](#其他)
 
-## 操作
+## 操作系统
 
 - [《Orange ‘s 一个操作系统的实现》](./src/Orange‘s一个操作系统的实现)
 
@@ -109,16 +109,12 @@
 
   <img src="./images/luago-book.jpg" width="300"/>
 
-- [《Rust 编程之道》](./src/tao-of-rust-codes) - [Github 下载地址](https://github.com/ZhangHanDong/tao-of-rust-codes)
-
-  <img src="./images/tao-of-rust-codes.jpg" width="300"/>
-
 - [阮一峰的 JavaScript 教程](./src/ruanyifeng-javascript-tutorial)
   - [原始代码地址](https://github.com/wangdoc/javascript-tutorial)
   - [教程地址](https://wangdoc.com/javascript/index.html)
 
 - [The Go Programming Language](./src/gopl.io)
-  - Github: <https://github.com/adonovan/gopl.io/>
+  - Github：<https://github.com/adonovan/gopl.io/>
   - 官方地址：<http://www.gopl.io/>
 
   <img src="./images/the-go-programming-language.png" width="300"/>
@@ -132,13 +128,33 @@
   <img src="./images/golang-internal-cover.webp" width="300"/>
 
 - [《Go 语言高级编程》](./src/anvanced-go-programming)
-  - Github: <https://github.com/RainbowMango/GoExpertProgramming>
+  - Github：<https://github.com/RainbowMango/GoExpertProgramming>
 
   <img src="./images/anvanced-go-programming.jpg" width="300"/>
 
   - [《Go 专家编程》](./src/GoExpertProgramming)
 
   <img src="./images/GoExpertProgramming.png" width="300"/>
+
+- [《Writing A Compiler In Go/用 Go 语言自制解释器》](./src/wacig_code_1.2)，国内叫做**金猴书**
+
+  <img src="./images/writing-an-compiler-in-go.png" width="300"/>
+
+  <img src="./images/writing-an-compiler-in-go-cn.jpg" width="300"/>
+
+- [《Writing An Interpreter In Go/用 Go 语言自制编译器》](./src/waiig_code_1.3)，国内叫做**彩猴书**
+
+  <img src="./images/writing-an-interpreter-in-go.png" width="300"/>
+
+  <img src="./images/writing-an-interpreter-in-go-cn.jpg" width="300"/>>
+
+- [《Black Hat Rust》](./src/black-hat-rust)
+
+  <img src="./images/black-hat-rust.png" width="300"/>
+
+- [《Rust 编程之道》](./src/tao-of-rust-codes) - [Github 下载地址](https://github.com/ZhangHanDong/tao-of-rust-codes)
+
+  <img src="./images/tao-of-rust-codes.jpg" width="300"/>
 
 - [《百万在线：大型游戏服务端开发》](./src/million_game_server) - [Github 代码地址](https://github.com/luopeiyu/million_game_server)
 
@@ -198,7 +214,7 @@
 
 - [《Linux 环境编程：从应用到内核》](./src/Linux环境编程:从应用到内核)
   - Linux 内核版本 3.2.44
-  - glic 的版本
+  - glibc 的版本
 
 - [《深入理解 Linux 网络 - 修炼底层内功、掌握高性能原理》](./src/deep_linux_network_tests) - [Github 地址](https://github.com/yanfeizhang/deep_linux_network_tests)
 
@@ -272,10 +288,6 @@
 
   <img src="./images/QtCreator快速入门.jpg" width="300"/>
 
-- [《Black Hat Rust》](./src/black-hat-rust)
-
-  <img src="./images/black-hat-rust.png" width="300"/>
-
 - [《GPU 精粹三部》](https://github.com/shangzongyu/GPU-Gems-Book-Source-Code)
 
   <img src="https://raw.githubusercontent.com/shangzongyu/GPU-Gems-Book-Source-Code/master/Media/repo-cover.jpg"  width="300"/>
@@ -283,13 +295,3 @@
 - [《gRPC - Up & Running》](./src/grpc-up-and-running) - [Github 地址](https://github.com/grpc-up-and-running/samples)
 
     <img src="./images/grpc-up-and-running.png" width="300"/>
-
-- [《Writing A Compiler In Go/用 Go 语言自制解释器》](./src/wacig_code_1.2)，国内叫做**金猴书**
-
-  <img src="./images/writing-an-compiler-in-go.png" width="300"/>
-  <img src="./images/writing-an-compiler-in-go-cn.jpg" width="300"/>
-
-- [《Writing An Interpreter In Go/用 Go 语言自制编译器》](./src/waiig_code_1.3)，国内叫做**彩猴书**
-
-  <img src="./images/writing-an-interpreter-in-go.png" width="300"/>
-  <img src="./images/writing-an-interpreter-in-go-cn.jpg" width="300"/>>
