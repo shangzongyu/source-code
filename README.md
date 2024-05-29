@@ -105,15 +105,18 @@
 - [《On Java 8》](./src/OnJava8-Examples) - [Github 代码地址](https://github.com/BruceEckel/OnJava8-Examples)/[官网](https://www.onjava8.com)
 
   <img src="./images/on-java8.png" width="300"/>
+
 - [《自己动手实现 Lua》](./src/luago-book)
 
   <img src="./images/luago-book.jpg" width="300"/>
 
 - [阮一峰的 JavaScript 教程](./src/ruanyifeng-javascript-tutorial)
+
   - [原始代码地址](https://github.com/wangdoc/javascript-tutorial)
   - [教程地址](https://wangdoc.com/javascript/index.html)
 
 - [The Go Programming Language](./src/gopl.io)
+
   - Github：<https://github.com/adonovan/gopl.io/>
   - 官方地址：<http://www.gopl.io/>
 
@@ -128,6 +131,7 @@
   <img src="./images/golang-internal-cover.webp" width="300"/>
 
 - [《Go 语言高级编程》](./src/anvanced-go-programming)
+
   - Github：<https://github.com/RainbowMango/GoExpertProgramming>
 
   <img src="./images/anvanced-go-programming.jpg" width="300"/>
@@ -143,10 +147,13 @@
   <img src="./images/writing-an-compiler-in-go-cn.jpg" width="300"/>
 
 - [《Writing An Interpreter In Go/用 Go 语言自制编译器》](./src/waiig_code_1.3)，国内叫做**彩猴书**
-
   <img src="./images/writing-an-interpreter-in-go.png" width="300"/>
 
   <img src="./images/writing-an-interpreter-in-go-cn.jpg" width="300"/>>
+
+- [《Learn Concurrent Programming With Go》](./)，[原始代码地址](https://github.com/cutajarj/ConcurrentProgrammingWithGo)
+
+  <img src="./images/ConcurrentProgrammingWithGo.png" width="300"/>
 
 - [《Black Hat Rust》](./src/black-hat-rust)
 
@@ -213,6 +220,7 @@
 - [《Linux 内核 0.12 完全注释》](./src/linux-kernel-0.12)
 
 - [《Linux 环境编程：从应用到内核》](./src/Linux环境编程:从应用到内核)
+
   - Linux 内核版本 3.2.44
   - glibc 的版本
 
@@ -252,7 +260,7 @@
 
   <img src="./images/linux-observability-with-bpf.png" width="300"/>
 
-- [《Learning eBPF》](./src/learning-ebpf)  - [Github 地址](https://github.com/lizrice/learning-ebpf)
+- [《Learning eBPF》](./src/learning-ebpf) - [Github 地址](https://github.com/lizrice/learning-ebpf)
 
   <img src="./images/learning-ebpf-cover.png" width="300"/>
 
