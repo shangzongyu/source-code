@@ -151,7 +151,7 @@
 
   <img src="./images/writing-an-interpreter-in-go-cn.jpg" width="300"/>>
 
-- [《Learn Concurrent Programming With Go》](./)，[原始代码地址](https://github.com/cutajarj/ConcurrentProgrammingWithGo)
+- [《Learn Concurrent Programming With Go》](./)，[Github 代码地址](https://github.com/cutajarj/ConcurrentProgrammingWithGo)
 
   <img src="./images/ConcurrentProgrammingWithGo.png" width="300"/>
 
@@ -159,9 +159,13 @@
 
   <img src="./images/black-hat-rust.png" width="300"/>
 
-- [《Rust 编程之道》](./src/tao-of-rust-codes) - [Github 下载地址](https://github.com/ZhangHanDong/tao-of-rust-codes)
+- [《Rust 编程之道》](./src/tao-of-rust-codes) - [Github 代码地址](https://github.com/ZhangHanDong/tao-of-rust-codes)
 
   <img src="./images/tao-of-rust-codes.jpg" width="300"/>
+
+- [《Zero To Production In Rust》](./src/zero-to-production) - [Github 代码地址](https://github.com/LukeMathWalker/zero-to-production)
+
+  <img src="./images/zero2prod.png" width="300"/>
 
 - [《百万在线：大型游戏服务端开发》](./src/million_game_server) - [Github 代码地址](https://github.com/luopeiyu/million_game_server)
 
