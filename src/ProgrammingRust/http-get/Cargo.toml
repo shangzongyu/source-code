@@ -1,0 +1,8 @@
+[package]
+name = "http-get"
+version = "0.1.0"
+authors = ["You <you@example.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking"] }

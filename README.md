@@ -189,6 +189,11 @@
 
   <img src="./images/zero2prod.png" width="300"/>
 
+- [《Programming Rust, 2nd Edition》](./src/ProgrammingRust/)
+  > Github: <https://github.com/ProgrammingRust/examples>
+
+  <img src="./images/programming-rust-v2.jpeg" width="300"/>
+
 ### Lua
 
 - [《百万在线：大型游戏服务端开发》](./src/million_game_server)
