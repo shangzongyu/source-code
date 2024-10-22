@@ -301,6 +301,11 @@
 
   <img src="./images/learning-ebpf-cover.png" width="300"/>
 
+- [《eBPF 云原生安全：原理与实践》](./src/cloud-native-security-with-ebpf)
+  > Github 地址: <https://github.com/mozillazg/cloud-native-security-with-ebpf>
+
+  <img src="./images/cloud-native-security-with-ebpf.jpg" width="300" alt="eBPF 云原生安全：原理与实践" />
+
 ## AI
 
 - [《GPT 图解》](./src/GPT图解)
