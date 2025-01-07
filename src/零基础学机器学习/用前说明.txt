@@ -1,0 +1,59 @@
+示例代码中或有不当之处，欢迎读者提出改进，作者邮箱tohuangjia@gmail.com
+书名《零基础学机器学习》 
+作者黄佳   人民邮电出版社 出版
+
+------------------------------------
+2021 Dec 9 - 1版4次印刷之前的说明
+微调了下述文件的代码：
+C01-2 MNIST Number Recognition.ipynb
+C02-2 Tensor - Vertorization.ipynb
+C03-2 Linear Regression - Ads-n-Sales Multi Vars.ipynb
+C04-1 Logistic Regression Single Class - Heart.ipynb
+C06-1 CNN Dogs.ipynb
+C07-2 CNN1D GRU - New Earth.ipynb
+
+几点说明：
+1. 鉴于keras已集成在tensorflow里面了，如果遇到模块找不到的问题，建议所有的import keras以及form keras语句，在keras前面都要加tensorflow。
+
+旧
+from keras import layers # 导入所有层 
+from keras import models # 导入所有模型 
+新
+from tensorflow.keras import layers # 导入所有层
+from tensorflow.keras import models # 导入所有模型  
+
+如果还有包或模块找不到的问题，可以把错误文字，如“No module named 'keras.models'”拷贝到搜索引擎来找解决方法。
+
+2. P37和P210  One-hot 编码工具部分
+旧
+from keras.utils.np_utils import to_categorical # 导入One-hot 编码工具
+新
+from tensorflow.keras.utils import to_categorical # 导入One-hot编码工具
+
+3.P219 卷积神经网络—识别狗狗的图像 数据增强部分
+
+旧
+history = cnn.fit_generator( # 使用fit_generator
+                         augs_gen.flow(X_train, y_train, batch_size=16), # 增强后的训练集
+                         validation_data = (X_test, y_test), # 指定验证集
+                         validation_steps = 100, # 指定验证步长
+                         steps_per_epoch = 100, # 指定每轮步长
+                         epochs = 50, # 指定轮次
+                          verbose = 1) # 指定是否显示训练过程中的信息
+
+这段代码以前是没有问题的，后来我在调试的过程，也遇到类似的问题。后来我就不使用validation_data了，就可以了。
+但是这样的缺点就是没有办法一边训练一边验证了，也没法绘制验证集的损失曲线了。
+
+
+新
+history = cnn.fit( # 拟合   
+                              augs_gen.flow(X_train,y_train,batch_size=16), # 增强后的训练集
+                              #     validation_data  = (X_test,y_test), # 指定验证集
+                              #     validation_steps = 100, # 指定验证步长
+                              #     steps_per_epoch  = 100, # 指定每轮步长
+                              epochs = 50,  # 指定轮次
+                              verbose = 1) # 指定是否显示训练过程中的信息
+
+
+---------
+创作不易，请支持正版，作者感谢您的支持！

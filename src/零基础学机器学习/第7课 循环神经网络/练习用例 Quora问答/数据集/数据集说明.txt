@@ -1,0 +1,2 @@
+数据集下载链接https://www.kaggle.com/c/quora-insincere-questions-classification
+也可以在Kaggle网站搜索Quora Insincere Questions Classification找到该数据集

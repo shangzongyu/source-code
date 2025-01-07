@@ -16,7 +16,7 @@
   - [网络](#网络)
   - [Linux/Unix](#linuxunix)
   - [Windows](#windows)
-  - [云计算](#云计算)
+  - [云计算](#云计算
   - [编辑器](#编辑器)
   - [性能优化](#性能优化)
     - [eBPF](#ebpf)
@@ -317,6 +317,10 @@
 
   <img src="./images/Developing-Apps-with-GPT-4-and ChatGPT-CN.jpg" width="300"/>
   <img src="./images/Developing-Apps-with-GPT-4-and ChatGPT-EN.png" width="300"/>
+
+- [《零基础学机器学习》](./src/零基础学机器学习/)
+
+  <img src="./images/零基础学机器学习.png" width="300"/>
 
 ## 其他
 

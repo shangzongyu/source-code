@@ -1,0 +1,2 @@
+数据集链接https://www.kaggle.com/ardamavi/sign-language-digits-dataset
+也可以搜索在Kaggle网站搜索Turkey Ankara Ayrancı Anadolu High School's Sign Language Digits Dataset找到该数据集

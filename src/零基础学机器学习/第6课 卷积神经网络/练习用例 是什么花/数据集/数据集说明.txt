@@ -1,0 +1,2 @@
+数据集较大，完整数据集参见链接：https://www.kaggle.com/alxmamaev/flowers-recognition
+也可以在kaggle网站搜索flowers
