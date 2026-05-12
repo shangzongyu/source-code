@@ -1,0 +1,123 @@
+name: Advanced AI Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'src/**'    # 只在 src 目录变更时运行
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Get changed files
+        id: changed
+        run: |
+          FILES=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD" || true)
+          # 用 grep -c . 而不是 wc -l——空字符串时 wc -l 错误返回 1
+          COUNT=$(echo "$FILES" | grep -c . || true)
+          {
+            echo "files<<CHANGED_FILES_EOF"
+            echo "$FILES"
+            echo "CHANGED_FILES_EOF"
+          } >> "$GITHUB_OUTPUT"
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Run Claude Review
+        id: review
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC: "1"
+          # 通过 env 传变量，避免 ${{ }} 直接拼进 shell 导致命令注入
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+          CHANGED_COUNT: ${{ steps.changed.outputs.count }}
+        run: |
+          PROMPT="审查以下 PR 变更文件（共 ${CHANGED_COUNT} 个）：
+          ${CHANGED_FILES}
+
+          重点检查安全漏洞、逻辑错误、性能问题。
+          对每个问题给出文件名和行号。
+
+          ## Verdict
+          在最后输出唯一 sentinel token 之一（独占一行，不要列出选项）：
+          <VERDICT>approved</VERDICT>
+          <VERDICT>needs_changes</VERDICT>
+          <VERDICT>request_changes</VERDICT>"
+
+          if ! claude -p "$PROMPT" \
+            --output-format json \
+            --max-turns 10 \
+            --max-budget-usd 0.50 \
+            --model claude-sonnet-4-6 \
+            --allowedTools "Read,Grep,Glob" > review.json 2> claude.err; then
+            echo "::error::Claude command failed"
+            cat claude.err
+            exit 1
+          fi
+
+          if ! jq empty review.json 2>/dev/null; then
+            echo "::error::review.json is not valid JSON"
+            cat review.json
+            exit 1
+          fi
+
+          # 提取 markdown 输出到独立文件，下游所有步骤都从文件读
+          # 避免通过 ${{ steps.review.outputs.result }} 把多行 markdown 拼进 shell / JS
+          jq -r '.result // empty' review.json > review.md
+          COST=$(jq -r '.total_cost_usd' review.json)
+          echo "cost=$COST" >> "$GITHUB_OUTPUT"
+
+      - name: Post Review Comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const review = fs.readFileSync('review.md', 'utf8');
+            const cost = '${{ steps.review.outputs.cost }}';
+            // 把 verdict sentinel 从 PR 评论里隐藏
+            const visible = review.replace(/<VERDICT>[^<]+<\/VERDICT>/g, '').trim();
+            const body = [
+              '## 🤖 Claude Code Review',
+              '',
+              visible,
+              '',
+              '---',
+              `*Cost: $${cost} | Automated by Claude Code*`,
+            ].join('\n');
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body,
+            });
+
+      - name: Enforce verdict
+        run: |
+          # 用唯一 sentinel token 判断，不会和 prompt 模板字符串冲突
+          # 不能用 grep -qi "critical"——"critical" 在 review 报告里几乎必然出现
+          if grep -q "<VERDICT>request_changes</VERDICT>" review.md; then
+            echo "::error::Code review verdict: request_changes"
+            exit 1
+          fi
+          if grep -q "<VERDICT>needs_changes</VERDICT>" review.md; then
+            echo "::warning::Code review verdict: needs_changes (non-blocking)"
+          fi
