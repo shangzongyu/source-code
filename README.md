@@ -387,7 +387,7 @@
 
   <img src="./images/大模型应用开发：RAG实战课.jpg" width="300"/>
 
-- [《Claude Code 实战》](./src/Claude-Code实战-封面/)
+- [《Claude Code 实战》](./src/Claude-Code实战/)
 
   <img src="./images/Claude-Code实战-封面.png" width="300"/>
 
