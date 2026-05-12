@@ -364,16 +364,16 @@
 
 ## AI
 
-- [《GPT 图解：大模型是怎样构建的》](./src/GPT图解)
-
-  <img src="./images/ChatGPT图解.jpg" width="300"/>
-
 - [《大模型应用开发极简入门：基于 ChatGPT-4 和 ChatGPT》](./src/gpt_examples-openai1.3/)
 
   > Github 地址：<https://github.com/malywut/gpt_examples/tree/openai1.3>
 
   <img src="./images/Developing-Apps-with-GPT-4-and ChatGPT-CN.jpg" width="300"/>
   <img src="./images/Developing-Apps-with-GPT-4-and ChatGPT-EN.png" width="300"/>
+
+- [《GPT 图解：大模型是怎样构建的》](./src/GPT图解)
+
+  <img src="./images/ChatGPT图解.jpg" width="300"/>
 
 - [《零基础学机器学习》](./src/零基础学机器学习/)
 
@@ -386,6 +386,10 @@
 - [《大模型应用开发：RAG实战课》](./src/大模型应用开发：动手做_AI_Agent/)
 
   <img src="./images/大模型应用开发：RAG实战课.jpg" width="300"/>
+
+- [《Claude Code 实战》](./src/Claude-Code实战-封面/)
+
+  <img src="./images/Claude-Code实战-封面.png" width="300"/>
 
 - [《这就是 MCP》](./src/mcp-book-resource/)
 
@@ -412,7 +416,6 @@
   > Github 地址：<https://github.com/chiphuyen/aie-book>
 
   <img src="./images/AI-Engineering.png" width="300"/>
-
 
 - [《Build a Large Language Model (From Scratch)》](./src/LLMs-from-scratch/)
 
