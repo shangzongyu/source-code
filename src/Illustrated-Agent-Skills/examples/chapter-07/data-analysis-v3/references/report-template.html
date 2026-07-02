@@ -1,0 +1,891 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 报告标题：替换为具体报告的主题 -->
+<title>品牌投放数据分析报告</title>
+
+<!-- 网页字体：英文用 Source Serif 4 / Inter，中文用 Noto Serif SC / Noto Sans SC。
+     生成具体报告时通常无需更改字体组合，保持统一即可。 -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- Chart.js 4.x 从稳定 CDN 加载 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+
+<style>
+/* ========================================================================
+   设计令牌（design tokens）
+   - 配色策略：1 个强调色（麦肯锡蓝）专门给关键数字 + 1 个深色用于标题区，
+     语义色（涨绿/跌红）只在数据有方向性时使用。
+   - 字体：serif 标题（带性格） + sans 数字（清晰）+ sans 正文。
+   - 间距：充足留白，宁可空也不要挤。
+   ======================================================================== */
+:root {
+  /* 主色（克制：仅 2 种） */
+  --ink:        #14213D;   /* 标题区深色背景 / 主文字 */
+  --accent:     #1F4E79;   /* 强调色：麦肯锡蓝，专门给关键数字 */
+
+  /* 中性色阶 */
+  --paper:      #FAFAF7;   /* 正文背景：极浅米白 */
+  --card:       #FFFFFF;   /* 卡片底色 */
+  --line:       #E6E6E0;   /* 分隔线 / 卡片描边 */
+  --muted:      #6B6F76;   /* 次要文字 */
+  --soft:       #9CA0A6;   /* 三级文字 */
+
+  /* 语义色：只在表示涨跌 / 异常时使用 */
+  --up:         #2F7D4F;   /* 正向：克制的绿 */
+  --down:       #C0392B;   /* 负向：克制的红 */
+  --down-soft:  #FBECEA;   /* 负向卡片背景 */
+
+  /* 图表色板（3 个主色值 + 2 个辅助）：与整体协调，避免彩虹色 */
+  --c1:         #1F4E79;   /* 主：麦肯锡蓝 */
+  --c2:         #6B8FB2;   /* 辅：淡蓝 */
+  --c3:         #C9A66B;   /* 辅：暖驼 */
+  --c4:         #2F7D4F;   /* 辅：绿（与 --up 协调） */
+  --c5:         #B6BDC4;   /* 中性灰，用作对比 */
+
+  /* 字体 */
+  --serif:  'Source Serif 4', 'Noto Serif SC', Georgia, 'Songti SC', serif;
+  --sans:   'Inter', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================================================
+   顶部标题区（hero）
+   - 深色背景拉开层次；正文区保持明亮
+   - 大字号 serif 标题 + 一句话摘要
+   ======================================================================== */
+.hero {
+  background: var(--ink);
+  color: #fff;
+  padding: 72px 64px 56px;
+}
+.hero-meta {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9CA9BC;
+  margin-bottom: 24px;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+  max-width: 880px;
+}
+.hero p.lede {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.55;
+  color: #C8D2E0;
+  margin: 0;
+  max-width: 760px;
+}
+.hero-footer {
+  display: flex;
+  gap: 48px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  font-size: 13px;
+  color: #9CA9BC;
+}
+.hero-footer span b { color: #fff; font-weight: 600; }
+
+/* ========================================================================
+   主内容容器
+   ======================================================================== */
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 56px 64px 80px;
+}
+
+/* 章节标题：小标签 + 主标题 + 细横线 */
+.section-head {
+  margin: 56px 0 28px;
+}
+.section-head .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.section-head h2 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0 0 14px;
+  letter-spacing: -0.005em;
+}
+.section-head .rule {
+  width: 48px;
+  height: 2px;
+  background: var(--ink);
+}
+
+/* ========================================================================
+   KPI 卡片行：4 张并排，纯白卡 + 顶部细色条
+   - 数字大而粗，使用强调色
+   - 标签小而浅
+   - 与"发现卡片"在视觉上拉开差异
+   ======================================================================== */
+.kpi-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: -56px;            /* 与 hero 区域形成轻微重叠的悬浮效果 */
+  position: relative;
+  z-index: 2;
+}
+.kpi {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 28px 24px 24px;
+  position: relative;
+}
+.kpi::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--accent);
+}
+.kpi .label {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+  text-transform: none;
+}
+.kpi .value {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.05;
+  color: var(--accent);
+  letter-spacing: -0.02em;
+}
+.kpi .delta {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.kpi .delta.up   { color: var(--up); }
+.kpi .delta.down { color: var(--down); }
+
+/* ========================================================================
+   发现卡片（finding card）
+   - 每张卡 = 结论标题 + 1~2 句话解释 + 图表
+   - 与 KPI 卡片样式区分：更大、有标号、左侧细线
+   ======================================================================== */
+.findings {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+.finding {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--ink);
+  padding: 32px 36px 28px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: 40px;
+  align-items: start;
+}
+.finding .num {
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.finding h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.3;
+  margin: 0 0 14px;
+  letter-spacing: -0.005em;
+}
+.finding p {
+  color: var(--muted);
+  font-size: 14.5px;
+  margin: 0 0 8px;
+}
+.finding .chart-wrap {
+  /* 给图表留固定高度避免抖动 */
+  position: relative;
+  height: 260px;
+  width: 100%;
+}
+
+/* ========================================================================
+   亏损投放高亮卡（异常单项）
+   - 唯一一处使用语义红，强调"亏损 / 警示"
+   ======================================================================== */
+.alert {
+  background: var(--down-soft);
+  border: 1px solid #F3D6D2;
+  border-left: 3px solid var(--down);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 28px;
+  align-items: center;
+}
+.alert .tag {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: var(--down);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.alert .who {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.alert .why {
+  font-size: 14px;
+  color: #7A4036;
+  margin: 0;
+}
+.alert .loss {
+  text-align: right;
+}
+.alert .loss .v {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--down);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.alert .loss .l {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* ========================================================================
+   数据明细表
+   - 极简表格：无外框，仅行分隔线；数字右对齐使用等宽
+   ======================================================================== */
+.table-wrap {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 8px 0;
+  overflow-x: auto;
+}
+table.detail {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+table.detail thead th {
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+table.detail tbody td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #F1F1EC;
+  color: var(--ink);
+}
+table.detail tbody tr:last-child td { border-bottom: none; }
+table.detail td.num,
+table.detail th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+table.detail td.neg { color: var(--down); font-weight: 600; }
+table.detail td.pos { color: var(--up);   font-weight: 600; }
+
+/* ========================================================================
+   页脚
+   ======================================================================== */
+.foot {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: var(--soft);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+.foot .brand {
+  font-family: var(--serif);
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+
+/* ========================================================================
+   响应式：< 880px 单列堆叠
+   ======================================================================== */
+@media (max-width: 880px) {
+  .hero { padding: 48px 24px 40px; }
+  .hero h1 { font-size: 30px; }
+  .wrap { padding: 32px 24px 56px; }
+  .kpi-row { grid-template-columns: repeat(2, 1fr); margin-top: -32px; }
+  .kpi .value { font-size: 30px; }
+  .finding { grid-template-columns: 1fr; padding: 24px; gap: 20px; }
+  .finding .chart-wrap { height: 240px; }
+  .alert { grid-template-columns: 1fr; }
+  .alert .loss { text-align: left; }
+  .hero-footer { flex-wrap: wrap; gap: 16px 32px; }
+}
+
+/* 打印优化：保持明亮、收紧间距 */
+@media print {
+  body { background: #fff; }
+  .hero { padding: 48px 40px 32px; }
+  .wrap { padding: 32px 40px; }
+  .finding, .kpi, .alert, .table-wrap { break-inside: avoid; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===========================================================
+     标题区：报告主标题 + 一句话摘要 + 元信息（日期 / 数据范围 / 作者）
+     生成报告时：
+       - h1 改为本次报告的具体主题
+       - p.lede 写成"一句话结论式摘要"（决策层先看这句）
+       - hero-meta 与 hero-footer 中的日期、范围、作者按实际填写
+     =========================================================== -->
+<header class="hero">
+  <div class="hero-meta">REPORT &nbsp;·&nbsp; 品牌投放数据分析</div>
+  <h1>2025 年 1 月品牌投放复盘：高 ROI 增长稳健，单点亏损需立即处置</h1>
+  <p class="lede">本期投放整体 ROI 维持在健康区间，但一条尾部计划出现显著亏损并推高了平均退货率，建议本周内完成预算重分配。</p>
+  <div class="hero-footer">
+    <span>报告日期 <b>2025-02-03</b></span>
+    <span>数据范围 <b>2025-01-01 至 2025-01-31</b></span>
+    <span>编制 <b>数据分析组</b></span>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ===========================================================
+       KPI 卡片行：4 个核心指标
+       规则：
+         - 数字大、用强调色；标签小、灰色
+         - delta 行可选，用于显示同比/环比；正向用 .up，负向用 .down
+         - 占位示例字段：总 GMV / 总消耗 / 整体 ROI / 平均退货率
+       =========================================================== -->
+  <section class="kpi-row" aria-label="核心指标">
+    <div class="kpi">
+      <div class="label">总 GMV</div>
+      <div class="value" id="kpi-gmv">¥ 0</div>
+      <div class="delta up" id="kpi-gmv-delta">↑ 0% 环比</div>
+    </div>
+    <div class="kpi">
+      <div class="label">总消耗</div>
+      <div class="value" id="kpi-cost">¥ 0</div>
+      <div class="delta" id="kpi-cost-delta">— 持平</div>
+    </div>
+    <div class="kpi">
+      <div class="label">整体 ROI</div>
+      <div class="value" id="kpi-roi">0.00</div>
+      <div class="delta up" id="kpi-roi-delta">↑ 高于基准 2.0</div>
+    </div>
+    <div class="kpi">
+      <div class="label">平均退货率</div>
+      <div class="value" id="kpi-return">0.0%</div>
+      <div class="delta down" id="kpi-return-delta">↑ 高于警戒 12%</div>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       核心发现区：3~4 张发现卡片
+       每张卡：结论式 h3 标题（不是中性描述，要带判断）
+              + 1~2 句话解释（说"为什么/影响是什么"）
+              + 一个 canvas 图表
+       建议组合：柱状图（对比）/ 散点图（相关）/ 折线图（趋势）
+       =========================================================== -->
+  <div class="section-head">
+    <div class="eyebrow">FINDINGS</div>
+    <h2>核心发现</h2>
+    <div class="rule"></div>
+  </div>
+
+  <section class="findings">
+
+    <!-- 发现 1：用柱状图展示"对比类"洞察 -->
+    <article class="finding">
+      <div>
+        <div class="num">FINDING 01</div>
+        <h3>头部三个渠道贡献了 GMV 的七成，资源集中度合理。</h3>
+        <p>渠道 A、B、C 合计占总 GMV 的 71%，其中渠道 A 单独贡献近三成；尾部渠道效率明显落后，可考虑缩减或合并。</p>
+        <p style="color: var(--soft); font-size:13px;">数据维度：各渠道当期 GMV（¥ 万元）。</p>
+      </div>
+      <div class="chart-wrap"><canvas id="chart-bar"></canvas></div>
+    </article>
+
+    <!-- 发现 2：用散点图展示"相关性 / 异常点" -->
+    <article class="finding">
+      <div>
+        <div class="num">FINDING 02</div>
+        <h3>消耗与 GMV 整体正相关,但存在一条显著偏离的异常计划。</h3>
+        <p>多数计划落在合理区间内,消耗越高 GMV 越高;右下角的离群点为高消耗低产出,需重点关注。</p>
+        <p style="color: var(--soft); font-size:13px;">数据维度:各计划"消耗-GMV"散点。</p>
+      </div>
+      <div class="chart-wrap"><canvas id="chart-scatter"></canvas></div>
+    </article>
+
+    <!-- 发现 3：用折线图展示"时间趋势" -->
+    <article class="finding">
+      <div>
+        <div class="num">FINDING 03</div>
+        <h3>ROI 在月中出现一次明显下滑,与单点亏损计划上线时间吻合。</h3>
+        <p>1 月 1 日至 14 日整体 ROI 稳定在 3.0 以上;15 日后下滑至 2.4 附近,与亏损计划的预算放量节奏一致。</p>
+        <p style="color: var(--soft); font-size:13px;">数据维度:日度整体 ROI。</p>
+      </div>
+      <div class="chart-wrap"><canvas id="chart-line"></canvas></div>
+    </article>
+
+  </section>
+
+  <!-- ===========================================================
+       亏损投放高亮卡：单条异常记录,用语义红强调
+       生成时:替换计划名 / 损失金额 / 原因描述
+       =========================================================== -->
+  <div class="section-head">
+    <div class="eyebrow">ALERT</div>
+    <h2>需要立即处置的亏损投放</h2>
+    <div class="rule"></div>
+  </div>
+
+  <section class="alert" id="alert-card">
+    <span class="tag">亏损</span>
+    <div>
+      <div class="who" id="alert-who">渠道 D · 计划 #D-0118 "春节礼盒-大盘"</div>
+      <p class="why" id="alert-why">单计划 ROI 仅 0.72,退货率 28%,远高于大盘均值,且占用了 12% 的预算份额。</p>
+    </div>
+    <div class="loss">
+      <div class="v" id="alert-loss">- ¥ 48.6 万</div>
+      <div class="l">本期净亏损</div>
+    </div>
+  </section>
+
+  <!-- ===========================================================
+       数据明细表:完整列出本期主要计划/渠道的关键指标
+       生成时:tbody 由数据动态生成;正负值用 .pos / .neg 上色
+       =========================================================== -->
+  <div class="section-head">
+    <div class="eyebrow">DETAIL</div>
+    <h2>数据明细</h2>
+    <div class="rule"></div>
+  </div>
+
+  <div class="table-wrap">
+    <table class="detail">
+      <thead>
+        <tr>
+          <th>渠道 / 计划</th>
+          <th class="num">消耗 (¥)</th>
+          <th class="num">GMV (¥)</th>
+          <th class="num">ROI</th>
+          <th class="num">退货率</th>
+          <th class="num">净收益 (¥)</th>
+        </tr>
+      </thead>
+      <tbody id="detail-body">
+        <!-- 占位行,实际由 renderTable() 动态生成 -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ===========================================================
+       页脚:数据来源 + 生成时间 + 品牌信息
+       =========================================================== -->
+  <footer class="foot">
+    <span class="brand">数据分析组 · Data Analysis</span>
+    <span id="foot-meta">数据来源:内部投放系统 · 生成时间 2025-02-03 14:20</span>
+  </footer>
+
+</main>
+
+<script>
+/* ========================================================================
+   占位数据(DATA)
+   ------------------------------------------------------------------------
+   生成具体报告时:
+     1. 用真实数据替换 DATA 对象中的字段
+     2. 字段名 / 结构尽量保持一致,渲染逻辑无需改动
+     3. 数字单位在格式化函数里统一处理(下方 fmt.*)
+   ======================================================================== */
+const DATA = {
+  kpi: {
+    gmv:        { value: 12_840_000, deltaText: '↑ 18% 环比',     deltaDir: 'up'   },
+    cost:       { value:  4_120_000, deltaText: '↑ 6% 环比',      deltaDir: 'up'   },
+    roi:        { value:        3.12, deltaText: '↑ 高于基准 2.0', deltaDir: 'up'   },
+    returnRate: { value:        0.146, deltaText: '↑ 高于警戒 12%', deltaDir: 'down' },
+  },
+
+  // 发现 1:渠道 GMV 对比(柱状图)
+  channelGmv: {
+    labels: ['渠道 A', '渠道 B', '渠道 C', '渠道 D', '渠道 E', '渠道 F'],
+    values: [380, 290, 240, 110, 95, 65],   // 单位:万元
+  },
+
+  // 发现 2:消耗-GMV 散点
+  scatter: [
+    { x:  8,  y:  26 }, { x: 12, y:  38 }, { x: 15, y:  44 }, { x: 18, y:  52 },
+    { x: 22, y:  60 }, { x: 25, y:  72 }, { x: 30, y:  88 }, { x: 33, y:  96 },
+    { x: 38, y: 108 }, { x: 42, y: 118 }, { x: 48, y: 132 }, { x: 55, y: 148 },
+    { x: 48, y:  18 },  // 离群点:高消耗低产出
+  ],
+
+  // 发现 3:日度 ROI 趋势
+  dailyRoi: {
+    labels: ['1/1','1/3','1/5','1/7','1/9','1/11','1/13','1/15','1/17','1/19','1/21','1/23','1/25','1/27','1/29','1/31'],
+    values: [3.05, 3.12, 3.18, 3.22, 3.10, 3.05, 3.15, 2.92, 2.58, 2.40, 2.42, 2.48, 2.55, 2.60, 2.72, 2.80],
+  },
+
+  // 亏损投放高亮
+  alert: {
+    who:  '渠道 D · 计划 #D-0118 "春节礼盒-大盘"',
+    why:  '单计划 ROI 仅 0.72,退货率 28%,远高于大盘均值,且占用了 12% 的预算份额。',
+    loss: -486_000,
+  },
+
+  // 数据明细表
+  detail: [
+    { name: '渠道 A · #A-0102',  cost: 1_180_000, gmv: 3_840_000, roi: 3.25, ret: 0.11, net:  2_660_000 },
+    { name: '渠道 B · #B-0104',  cost:   920_000, gmv: 2_910_000, roi: 3.16, ret: 0.12, net:  1_990_000 },
+    { name: '渠道 C · #C-0108',  cost:   760_000, gmv: 2_410_000, roi: 3.17, ret: 0.13, net:  1_650_000 },
+    { name: '渠道 D · #D-0118',  cost:   670_000, gmv:   482_000, roi: 0.72, ret: 0.28, net:   -486_000 },
+    { name: '渠道 E · #E-0121',  cost:   310_000, gmv:   960_000, roi: 3.10, ret: 0.14, net:    650_000 },
+    { name: '渠道 F · #F-0125',  cost:   190_000, gmv:   650_000, roi: 3.42, ret: 0.10, net:    460_000 },
+    { name: '其他合计',           cost:   90_000,  gmv:  388_000,  roi: 4.31, ret: 0.09, net:    298_000 },
+  ],
+};
+
+/* ========================================================================
+   格式化工具
+   ======================================================================== */
+const fmt = {
+  // 金额(自动选万/亿),不含符号
+  money(n) {
+    const abs = Math.abs(n);
+    if (abs >= 1e8) return (n / 1e8).toFixed(2) + ' 亿';
+    if (abs >= 1e4) return (n / 1e4).toFixed(1) + ' 万';
+    return n.toLocaleString('zh-CN');
+  },
+  yuan(n)  { return (n < 0 ? '- ' : '') + '¥ ' + fmt.money(Math.abs(n)); },
+  pct(n)   { return (n * 100).toFixed(1) + '%'; },
+  num(n,d=2){ return n.toFixed(d); },
+};
+
+/* ========================================================================
+   Chart.js 全局默认值:与报告整体字体 / 色调保持一致
+   ======================================================================== */
+const FONT_STACK = "Inter, 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif";
+Chart.defaults.font.family = FONT_STACK;
+Chart.defaults.font.size   = 12;
+Chart.defaults.color       = '#6B6F76';     // 与 --muted 一致
+Chart.defaults.borderColor = '#EDEDE8';
+Chart.defaults.plugins.legend.display = false;   // 默认隐藏图例,需要时单独打开
+Chart.defaults.plugins.tooltip.backgroundColor = '#14213D';
+Chart.defaults.plugins.tooltip.titleFont = { family: FONT_STACK, weight: '600' };
+Chart.defaults.plugins.tooltip.bodyFont  = { family: FONT_STACK };
+Chart.defaults.plugins.tooltip.padding = 10;
+Chart.defaults.plugins.tooltip.cornerRadius = 2;
+
+/* 报告自定义色板(避免 Chart.js 默认色) */
+const PALETTE = ['#1F4E79', '#6B8FB2', '#C9A66B', '#2F7D4F', '#B6BDC4'];
+
+/* 复用的坐标轴样式:隐藏垂直网格、保留极浅水平网格 */
+function axisStyle(opts = {}) {
+  return {
+    grid: {
+      color: '#F0F0EA',
+      drawTicks: false,
+      drawBorder: false,
+      ...(opts.grid || {}),
+    },
+    border: { display: false },
+    ticks: {
+      padding: 8,
+      color: '#6B6F76',
+      font: { family: FONT_STACK, size: 11 },
+      ...(opts.ticks || {}),
+    },
+  };
+}
+
+/* ========================================================================
+   图表创建函数(给生成器复用的模板)
+   - createBarChart(ctx, labels, values, label)
+   - createScatterChart(ctx, points, xLabel, yLabel)
+   - createLineChart(ctx, labels, values, label)
+   ======================================================================== */
+function createBarChart(ctx, labels, values, label = '数值') {
+  return new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [{
+        label,
+        data: values,
+        backgroundColor: labels.map((_, i) => i === 0 ? PALETTE[0] : PALETTE[1]),
+        // 头部数据用主色,其余用辅色,形成自然层次
+        borderWidth: 0,
+        borderRadius: 2,
+        maxBarThickness: 44,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: { top: 8, right: 8 } },
+      scales: {
+        x: axisStyle({ grid: { color: 'transparent' } }),
+        y: axisStyle({
+          ticks: {
+            padding: 8,
+            color: '#6B6F76',
+            font: { family: FONT_STACK, size: 11 },
+            callback(v) { return fmt.num(v, 0); },
+          },
+        }),
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label(ctx) { return ` ${label}: ${fmt.num(ctx.parsed.y, 1)}`; },
+          },
+        },
+      },
+    },
+  });
+}
+
+function createScatterChart(ctx, points, xLabel = 'X', yLabel = 'Y') {
+  return new Chart(ctx, {
+    type: 'scatter',
+    data: {
+      datasets: [{
+        label: '计划',
+        data: points,
+        backgroundColor: PALETTE[0],
+        borderColor: PALETTE[0],
+        pointRadius: 5,
+        pointHoverRadius: 7,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: 8 },
+      scales: {
+        x: {
+          ...axisStyle(),
+          title: {
+            display: true,
+            text: xLabel,
+            color: '#9CA0A6',
+            font: { family: FONT_STACK, size: 11, weight: '500' },
+            padding: { top: 8 },
+          },
+          ticks: {
+            padding: 6,
+            color: '#6B6F76',
+            font: { family: FONT_STACK, size: 11 },
+            callback(v) { return fmt.num(v, 0); },
+          },
+          grid: { color: 'transparent', drawBorder: false },
+        },
+        y: {
+          ...axisStyle(),
+          title: {
+            display: true,
+            text: yLabel,
+            color: '#9CA0A6',
+            font: { family: FONT_STACK, size: 11, weight: '500' },
+            padding: { bottom: 8 },
+          },
+          ticks: {
+            padding: 8,
+            color: '#6B6F76',
+            font: { family: FONT_STACK, size: 11 },
+            callback(v) { return fmt.num(v, 0); },
+          },
+        },
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label(ctx) {
+              const p = ctx.parsed;
+              return ` ${xLabel}: ${fmt.num(p.x,1)}  ·  ${yLabel}: ${fmt.num(p.y,1)}`;
+            },
+          },
+        },
+      },
+    },
+  });
+}
+
+function createLineChart(ctx, labels, values, label = '数值') {
+  return new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label,
+        data: values,
+        borderColor: PALETTE[0],
+        backgroundColor: 'rgba(31, 78, 121, 0.08)',
+        borderWidth: 2,
+        tension: 0.28,
+        fill: true,
+        pointRadius: 0,
+        pointHoverRadius: 5,
+        pointHoverBackgroundColor: PALETTE[0],
+        pointHoverBorderColor: '#fff',
+        pointHoverBorderWidth: 2,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      layout: { padding: { top: 8, right: 8 } },
+      scales: {
+        x: axisStyle({ grid: { color: 'transparent' } }),
+        y: axisStyle({
+          ticks: {
+            padding: 8,
+            color: '#6B6F76',
+            font: { family: FONT_STACK, size: 11 },
+            callback(v) { return fmt.num(v, 2); },
+          },
+        }),
+      },
+      plugins: {
+        tooltip: {
+          callbacks: {
+            label(ctx) { return ` ${label}: ${fmt.num(ctx.parsed.y, 2)}`; },
+          },
+        },
+      },
+    },
+  });
+}
+
+/* ========================================================================
+   渲染:把 DATA 填进 DOM 与图表
+   ======================================================================== */
+function renderKpi() {
+  const k = DATA.kpi;
+  document.getElementById('kpi-gmv').textContent    = fmt.yuan(k.gmv.value);
+  document.getElementById('kpi-cost').textContent   = fmt.yuan(k.cost.value);
+  document.getElementById('kpi-roi').textContent    = fmt.num(k.roi.value, 2);
+  document.getElementById('kpi-return').textContent = fmt.pct(k.returnRate.value);
+
+  const setDelta = (id, conf) => {
+    const el = document.getElementById(id);
+    el.textContent = conf.deltaText;
+    el.classList.remove('up','down');
+    if (conf.deltaDir) el.classList.add(conf.deltaDir);
+  };
+  setDelta('kpi-gmv-delta',    k.gmv);
+  setDelta('kpi-cost-delta',   k.cost);
+  setDelta('kpi-roi-delta',    k.roi);
+  setDelta('kpi-return-delta', k.returnRate);
+}
+
+function renderAlert() {
+  const a = DATA.alert;
+  document.getElementById('alert-who').textContent  = a.who;
+  document.getElementById('alert-why').textContent  = a.why;
+  document.getElementById('alert-loss').textContent = fmt.yuan(a.loss);
+}
+
+function renderTable() {
+  const tbody = document.getElementById('detail-body');
+  tbody.innerHTML = DATA.detail.map(row => `
+    <tr>
+      <td>${row.name}</td>
+      <td class="num">${fmt.yuan(row.cost)}</td>
+      <td class="num">${fmt.yuan(row.gmv)}</td>
+      <td class="num">${fmt.num(row.roi, 2)}</td>
+      <td class="num">${fmt.pct(row.ret)}</td>
+      <td class="num ${row.net < 0 ? 'neg' : 'pos'}">${fmt.yuan(row.net)}</td>
+    </tr>
+  `).join('');
+}
+
+function renderCharts() {
+  createBarChart(
+    document.getElementById('chart-bar').getContext('2d'),
+    DATA.channelGmv.labels,
+    DATA.channelGmv.values,
+    'GMV(万元)'
+  );
+
+  createScatterChart(
+    document.getElementById('chart-scatter').getContext('2d'),
+    DATA.scatter,
+    '消耗(万元)',
+    'GMV(万元)'
+  );
+
+  createLineChart(
+    document.getElementById('chart-line').getContext('2d'),
+    DATA.dailyRoi.labels,
+    DATA.dailyRoi.values,
+    '日度 ROI'
+  );
+}
+
+/* 初始化 */
+document.addEventListener('DOMContentLoaded', () => {
+  renderKpi();
+  renderAlert();
+  renderTable();
+  renderCharts();
+});
+</script>
+
+</body>
+</html>
