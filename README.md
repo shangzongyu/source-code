@@ -402,6 +402,10 @@
 
   <img src="./images/图解Skill：AI提效实战指南.jpg" width="300"/>
 
+- [《AI科研绘图：Nano Banana极速实战指南》](./src/AI科研绘图：Nano Banana极速实战指南)
+
+  <img src="./images/AI科研绘图：Nano Banana极速实战指南.jpg" width="300"/>
+
 ## 其他
 
 - [《The Pragmatic Programmer - your journey to mastery》/《程序员修炼之道：通向务实的最高境界 - 第二版》](./src/the-pragmatic-programmer-2nd)
