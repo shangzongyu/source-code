@@ -133,7 +133,7 @@
   <img src="./images/C++11_14高级编程_Boost_程序库探秘_第三版.jpeg" width="300"/>
 - [Modern C++ Tutorial：C++11/14/17/20 On the Fly](./src/modern-cpp-tutorial)
 
-  > Github： [https://github.com/changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial)
+  > Github：[https://github.com/changkun/modern-cpp-tutorial](https://github.com/changkun/modern-cpp-tutorial)
   >
 
   <img src="./images/modern-cpp-tutorial-cover-2nd.png" width="300"/>
@@ -162,7 +162,7 @@
 - [《On Java 8》](./src/OnJava8-Examples)
 
   > - Github: [https://github.com/BruceEckel/OnJava8-Examples](https://github.com/BruceEckel/OnJava8-Examples)
-  > - 官网: [https://www.onjava8.com](https://www.onjava8.com)
+  > - 官网：[https://www.onjava8.com](https://www.onjava8.com)
   >
 
   <img src="./images/on-java8.png" width="300"/>
@@ -208,7 +208,7 @@
   >
 
   <img src="./images/ConcurrentProgrammingWithGo.png" width="300"/>
-- [《Go 语言精进之路 从新手到高手的编程思想、方法和技巧1/2》](./src/GoProgrammingFromBeginnerToMaster)
+- [《Go 语言精进之路从新手到高手的编程思想、方法和技巧 1/2》](./src/GoProgrammingFromBeginnerToMaster)
 
   > Github：[https://github.com/bigwhite/GoProgrammingFromBeginnerToMaster](https://github.com/bigwhite/GoProgrammingFromBeginnerToMaster)
   >
@@ -254,8 +254,8 @@
 ### JavaScript
 
 - [阮一峰的 JavaScript 教程](./src/ruanyifeng-javascript-tutorial)
-  > - 原始代码地址: [https://github.com/wangdoc/javascript-tutorial](https://github.com/wangdoc/javascript-tutorial)
-  > - 教程地址: [https://wangdoc.com/javascript/index.html](https://wangdoc.com/javascript/index.html)
+  > - 原始代码地址：[https://github.com/wangdoc/javascript-tutorial](https://github.com/wangdoc/javascript-tutorial)
+  > - 教程地址：[https://wangdoc.com/javascript/index.html](https://wangdoc.com/javascript/index.html)
   >
 
 ## 网络
@@ -350,7 +350,7 @@
   <img src="./images/learning-ebpf-cover.png" width="300"/>
 - [《eBPF 云原生安全：原理与实践》](./src/cloud-native-security-with-ebpf)
 
-  > Github 地址: [https://github.com/mozillazg/cloud-native-security-with-ebpf](https://github.com/mozillazg/cloud-native-security-with-ebpf)
+  > Github 地址：[https://github.com/mozillazg/cloud-native-security-with-ebpf](https://github.com/mozillazg/cloud-native-security-with-ebpf)
   >
 
   <img src="./images/cloud-native-security-with-ebpf.jpg" width="300" alt="eBPF 云原生安全：原理与实践" />
@@ -373,7 +373,7 @@
 - [《大模型应用开发：动手做 AI Agent》](./src/大模型应用开发：动手做_AI_Agent/)
 
   <img src="./images/大模型应用开发：动手做_AI_Agent.jpg" width="300"/>
-- [《大模型应用开发：RAG实战课》](./src/大模型应用开发：动手做_AI_Agent/)
+- [《大模型应用开发：RAG 实战课》](./src/大模型应用开发：动手做_AI_Agent/)
 
   <img src="./images/大模型应用开发：RAG实战课.jpg" width="300"/>
 - [《Claude Code 实战》](./src/Claude-Code实战/)
@@ -385,15 +385,15 @@
 - [《深度学习入门：基于 Python 的理论与实现》](./src/deep-learning-intro-python/)
 
   <img src="./images/深度学习入门：基于Python的理论与实现.jpg" width="300"/>
-- [《深度学习入门2：自制框架》](./src/deep-learning-from-scratch-3-cn/)
+- [《深度学习入门 2：自制框架》](./src/deep-learning-from-scratch-3-cn/)
 
 <img src="./images/深度学习入门2：自制框架.jpg" width="300"/>
 
-- [《深度学习入门4：强化学习》](./src/deep-learning-from-scratch-4-cn/)
+- [《深度学习入门 4：强化学习》](./src/deep-learning-from-scratch-4-cn/)
 
 <img src="./images/深度学习入门4：强化学习.jpg" width="300"/>
 
-- [《Python深度学习（第2版）》](./src/Math-for-Programmers/)
+- [《Python 深度学习 (第 2 版)》](./src/Math-for-Programmers/)
 
 <img src="./images/Python深度学习（第2版）.jpg" width="300"/>
 
@@ -415,7 +415,7 @@
   >
 
   <img src="./images/LLM_Engineer's_Handbook.png" width="300"/>
-- [《图解Skill：AI提效实战指南》](./src/Illustrated-Agent-Skills)
+- [《图解 Skill：AI 提效实战指南》](./src/Illustrated-Agent-Skills)
 
   > Github 地址：[github.com/JimLiu/Illustrated-Agent-Skills](https://github.com/JimLiu/Illustrated-Agent-Skills)
 
