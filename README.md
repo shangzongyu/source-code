@@ -4,11 +4,13 @@
 
 - [源码](#源码)
   - [操作系统](#操作系统)
+    - [内核](#内核)
   - [存储](#存储)
     - [Redis](#redis)
     - [SQL](#sql)
     - [MySQL](#mysql)
     - [MongoDB](#mongodb)
+    - [PostgreSQL](#postgresql)
   - [编程语言](#编程语言)
     - [CPP](#cpp)
     - [Java](#java)
@@ -18,13 +20,12 @@
     - [JavaScript](#javascript)
   - [网络](#网络)
   - [Linux/Unix](#linuxunix)
-  - [Windows](#windows)
   - [云计算](#云计算)
   - [编辑器](#编辑器)
   - [性能优化](#性能优化)
     - [eBPF](#ebpf)
-  - [深度学习](#深度学习)
   - [AI](#ai)
+    - [深度学习](#深度学习)
   - [其他](#其他)
   - [仓库说明](#仓库说明)
 
@@ -123,7 +124,7 @@
 
   <img src="./images/MongoDB-8.0-In-Action-3rd.jpg" width="300"/>
 
-### PopstgreSQL
+### PostgreSQL
 
 #TODO
 
