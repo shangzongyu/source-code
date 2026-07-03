@@ -1,6 +1,3 @@
-#!/bin/sh
-
-tar -cvf addrinfo.tar README.getaddrinfo addrinfo.h getaddrinfo.c \
-			getnameinfo.c test_addrinfo.c inet_ntop.c inet_pton.c
-
-compress addrinfo.tar
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f2e5066d035f457515b5ef30e9ff50fd9824e4360d9c7a0008072efb039514d
+size 159
