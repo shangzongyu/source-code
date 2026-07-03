@@ -460,7 +460,9 @@
 
 - [《GPU 精粹三部》](https://github.com/shangzongyu/GPU-Gems-Book-Source-Code)
 
-  <img src="images/GPU-Gems-Book-Source-Code/master/Media/repo-cover.jpg"  width="300"/>
+  <img src="https://github.com/shangzongyu/GPU-Gems-Book-Source-Code/blob/master/Media/repo-cover.jpg?raw=true" width="300"/>
+
+  > 说明：仓库太大，放到独立的 Repo 里。
 
 - [《gRPC - Up &amp; Running》](./src/grpc-up-and-running)
 
