@@ -49,6 +49,29 @@
   <img src="./images/csapp3e-cover.jpg" width="300"/>
   <img src="./images/csapp3e-cover-cn.jpg" width="300"/>
 
+### 内核
+
+- [Windows 内核安全与驱动开发](./src/Windows-kernel-security-and-driver-development)
+
+  <img src="./images/Windows内核安全与驱动开发.jpg" width="300"/>
+
+- [《LINUX 设备驱动程序》/《Linux Device Drivers 3》](./src/ldd3)
+
+  <img src="./images/ldd3.jpg" width="300"/>
+  <img src="./images/ldd3-cn.jpg" width="300"/>
+
+- [《Linux 内核 0.11 完全注释》](./src/linux-kernel-0.11)
+
+  <img src="./images/Linux 内核 0.11 完全注释.jpg" width="300"/>
+
+- [《Linux 内核 0.12 完全注释》](./src/linux-kernel-0.12)
+- [《Linux 环境编程：从应用到内核》](./src/Linux环境编程:从应用到内核)
+
+  - Linux 内核版本 3.2.44
+  - glibc 的版本
+
+  <img src="./images/Linux 环境编程：从应用到内核.jpg" width="300"/>
+
 ## 存储
 
 ### Redis
@@ -99,6 +122,10 @@
   > Github 地址：[https://github.com/arekborucki/MongoDB-in-Action](https://github.com/arekborucki/MongoDB-in-Action)
 
   <img src="./images/MongoDB-8.0-In-Action-3rd.jpg" width="300"/>
+
+### PopstgreSQL
+
+#TODO
 
 ## 编程语言
 
@@ -298,26 +325,11 @@
   <img src="./images/beginning-linux-programming-4th-edition.jpeg" width="300"/>
   <img src="./images/beginning-linux-programming-4th-edition-cn.jpg" width="300"/>
 
-- [《LINUX 设备驱动程序》/《Linux Device Drivers 3》](./src/ldd3)
-
-  <img src="./images/ldd3.jpg" width="300"/>
-  <img src="./images/ldd3-cn.jpg" width="300"/>
-
-- [《Linux 内核 0.11 完全注释》](./src/linux-kernel-0.11)
-- [《Linux 内核 0.12 完全注释》](./src/linux-kernel-0.12)
-- [《Linux 环境编程：从应用到内核》](./src/Linux环境编程:从应用到内核)
-  - Linux 内核版本 3.2.44
-  - glibc 的版本
-
 - [《深入理解 Linux 网络 - 修炼底层内功、掌握高性能原理》](./src/deep_linux_network_tests)
 
   > Github 地址：[https://github.com/yanfeizhang/deep_linux_network_tests](https://github.com/yanfeizhang/deep_linux_network_tests)
 
   <img src="./images/coder-kung-fu.png" width="300"/>
-
-## Windows
-
-- [Windows 内核安全与驱动开发](./src/Windows-kernel-security-and-driver-development)
 
 ## 云计算
 
@@ -359,24 +371,6 @@
   > Github 地址：[https://github.com/mozillazg/cloud-native-security-with-ebpf](https://github.com/mozillazg/cloud-native-security-with-ebpf)
 
   <img src="./images/cloud-native-security-with-ebpf.jpg" width="300" alt="eBPF 云原生安全：原理与实践" />
-
-## 深度学习
-
-- [《深度学习入门：基于 Python 的理论与实现》](./src/deep-learning-intro-python/)
-
-  <img src="./images/深度学习入门：基于Python的理论与实现.jpg" width="300"/>
-
-- [《深度学习入门 2：自制框架》](./src/deep-learning-from-scratch-3-cn/)
-
-    <img src="./images/深度学习入门2：自制框架.jpg" width="300"/>
-
-- [《深度学习入门 4：强化学习》](./src/deep-learning-from-scratch-4-cn/)
-
-    <img src="./images/深度学习入门4：强化学习.jpg" width="300"/>
-
-- [《Python 深度学习 (第 2 版)》](./src/Math-for-Programmers/)
-
-    <img src="./images/Python深度学习（第2版）.jpg" width="300"/>
 
 ## AI
 
@@ -439,6 +433,24 @@
 
   <img src="./images/AI科研绘图：Nano Banana极速实战指南.jpg" width="300"/>
 
+### 深度学习
+
+- [《深度学习入门：基于 Python 的理论与实现》](./src/deep-learning-intro-python/)
+
+  <img src="./images/深度学习入门：基于Python的理论与实现.jpg" width="300"/>
+
+- [《深度学习入门 2：自制框架》](./src/deep-learning-from-scratch-3-cn/)
+
+    <img src="./images/深度学习入门2：自制框架.jpg" width="300"/>
+
+- [《深度学习入门 4：强化学习》](./src/deep-learning-from-scratch-4-cn/)
+
+    <img src="./images/深度学习入门4：强化学习.jpg" width="300"/>
+
+- [《Python 深度学习 (第 2 版)》](./src/Math-for-Programmers/)
+
+    <img src="./images/Python深度学习（第2版）.jpg" width="300"/>
+
 ## 其他
 
 - [《The Pragmatic Programmer - your journey to mastery》/《程序员修炼之道：通向务实的最高境界 - 第二版》](./src/the-pragmatic-programmer-2nd)
@@ -469,7 +481,6 @@
   > Github 地址：[https://github.com/grpc-up-and-running/samples](https://github.com/grpc-up-and-running/samples)
 
   <img src="./images/grpc-up-and-running.png" width="300"/>
-
 
 ## 仓库说明
 
