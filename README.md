@@ -434,6 +434,10 @@
 
   <img src="./images/AI科研绘图：Nano Banana极速实战指南.jpg" width="300"/>
 
+- [《Happy-LLM：从零开始构建大模型》](./src/Happy-LLM)
+
+  <img src="./images/Happy-LLM：从零开始构建大模型.jpg" width="300"/>
+
 ### 深度学习
 
 - [《深度学习入门：基于 Python 的理论与实现》](./src/deep-learning-intro-python/)
