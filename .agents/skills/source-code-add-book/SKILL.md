@@ -1,95 +1,111 @@
 ---
 name: source-code-add-book
-description: Add a new book/tutorial entry only in `/Users/tomshine/Code/github-shine/source-code` by copying its cover and code into this repository and updating README.md under the chosen category. Use when working in the source-code repository and the user wants to 新增一本书, add a book, add tutorial source, 指定封面位置, 指定代码位置, or update this repository's book index.
+description: Add or update a book/tutorial entry in `/Users/tomshine/Code/github-shine/source-code` by copying its cover and code into this repository and updating README.md under the chosen category. Supports two modes: (1) Douban mode — user pastes a Douban book link plus a local code directory; the skill fetches title/cover from Douban and fills README automatically; (2) manual mode — user provides title, cover file, and code dir. Use when working in the source-code repository and the user wants to 新增一本书, 豆瓣链接, 指定目录, add a book, add tutorial source, or update this repository's book index.
 ---
 
 # Source Code Add Book
 
 ## Scope
 
-This skill is only for `/Users/tomshine/Code/github-shine/source-code`.
+Only for `/Users/tomshine/Code/github-shine/source-code`. Verify `pwd` first; if not this repo, stop.
 
-Before doing anything, verify:
+## Inputs
+
+Ask for missing items before editing:
+
+- One of:
+  - **Douban URL** (e.g. `https://book.douban.com/subject/26600689/`) — title, cover, and link are fetched automatically
+  - **Book display title** (manual mode)
+- **Code/source directory** to copy into `src/`
+- **README category** heading (e.g. `编程语言 > Go`, `AI > 深度学习`); if the heading does not exist, ask whether to create it
+- Manual mode only: cover file path
+- Optional: official/GitHub URL, paired Chinese/English title notes
+
+## Mode A — Douban link
+
+1. Fetch the book page. Douban requires a browser User-Agent; plain requests get 403:
+
+   ```bash
+   curl -s -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36" "<douban-url>" -o /tmp/douban.html
+   ```
+
+2. Extract from `/tmp/douban.html`:
+   - `<meta property="og:title" content="…" />` → display title
+   - `<meta property="og:image" content="…" />` → cover URL
+   - `<meta property="og:url" …/>` → Douban link for README
+
+   Note: `<title>` tag carries a ` (豆瓣)` suffix; `og:title` does not — use `og:title`.
+
+3. Download the cover **from the og:image URL to a temp file** (cover CDN needs UA plus a Douban Referer, else 418), then convert it with the utility script to the repo as `.webp`:
+
+   ```bash
+   curl -s -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36" -e "https://book.douban.com/" -o /tmp/book-cover "<og:image-url>"
+   .agents/skills/source-code-add-book/scripts/convert-to-webp.sh /tmp/book-cover
+   mv /tmp/book-cover.webp "images/<title>.webp"
+   ```
+
+   Replace `/\:*?"<>|` in the title with `-` for both cover filename and src dir name; keep Chinese characters as-is (matches existing entries like `30天自制操作系统`).
+
+4. Copy the code directory — never move user originals:
+
+   ```bash
+   cp -R "<code-source-dir>" "src/<title-or-sanitized-name>/"
+   ```
+
+## Mode B — Manual inputs
 
 ```bash
-pwd
+cp "<cover-file>" "images/<title>.<ext>"
+cp -R "<code-source-dir>" "src/<dest-dir>/"
 ```
 
-If the current directory is not `/Users/tomshine/Code/github-shine/source-code`, stop and say this skill is scoped to that repository.
+Covers stay in their original format; run the file through `scripts/convert-to-webp.sh` if webp is wanted (same as Mode A).
 
-## Inputs to collect
+## Utility script — convert-to-webp.sh
 
-Ask for any missing item before editing:
+`scripts/convert-to-webp.sh` converts any non-webp image to `.webp` next to the original (originals kept). **Mode A uses it for every new Douban cover.**
 
-- Book display title for `README.md`
-- Category path in `README.md` headings, e.g. `编程语言 > Go`, `AI > 深度学习`
-- Cover file path
-- Code/source directory path
-- Optional official URL / GitHub URL / download URL
-- Optional Chinese/English paired titles or notes
+```bash
+.agents/skills/source-code-add-book/scripts/convert-to-webp.sh [-q 82] <file-or-dir>...
+```
 
-## Workflow
+- `-q QUALITY` 0-100, default 82; directories scanned recursively; existing `.webp` skipped.
+- Requires `cwebp` and `magick` in PATH (both at `/opt/homebrew/bin` on this machine).
+- Use when the user asks to convert covers/a directory of images to webp, or supplies a non-webp cover from an external source.
 
-1. Inspect the current repo shape:
+## Update README (both modes)
 
-   ```bash
-   pwd
-   rg '^#{2,4} ' README.md
-   find images src -maxdepth 1 -type d -o -type f
-   ```
+Update only the requested category, matching existing local style:
 
-2. Pick destination names:
+```md
+- [《标题》](./src/标题)
 
-   - Code goes to `src/<book-or-repo-name>/`.
-   - Cover goes to `images/<book-title-or-existing-style>.<ext>`.
-   - Preserve existing naming style; do not rename unrelated files.
-   - If destination exists, stop and ask whether to replace, merge, or choose another name.
+  > 豆瓣: [https://book.douban.com/subject/xxxx/](https://book.douban.com/subject/xxxx/)
 
-3. Copy files, do not move user originals:
+  <img src="./images/标题.<ext>" width="300"/>
+```
 
-   ```bash
-   cp -R "<code-source-dir>" "src/<dest-dir>"
-   cp "<cover-file>" "images/<cover-name>"
-   ```
+- Omit the `> 豆瓣:` block unless a Douban link was used; manual mode without any URL gets no URL block.
+- Keep indentation/blank lines identical to nearby entries; do not bulk-format the file.
+- If `src/<dest>` or `images/<cover>` already exists, stop and ask whether to replace, merge, or pick another name.
 
-4. Update `README.md` in the requested category only.
+## Verify
 
-   Use the existing local pattern:
-
-   ```md
-   - [《Book Title》](./src/dest-dir)
-
-     > Github: [https://example.com](https://example.com)
-
-     <img src="./images/cover-name.jpg" width="300"/>
-   ```
-
-   Omit URL block if no URL was provided. Keep indentation and blank lines consistent with nearby entries.
-
-5. Verify paths:
-
-   ```bash
-   test -d "src/<dest-dir>"
-   test -f "images/<cover-name>"
-   rg "src/<dest-dir>|images/<cover-name>" README.md
-   git status --short
-   ```
+```bash
+test -d "src/<dest-dir>"
+test -f "images/<cover-name>"
+rg "src/<dest-dir>|images/<cover-name>" README.md
+git status --short   # only this task's files
+```
 
 ## Rules
 
-- Do not bulk-format `README.md`.
-- Do not modify other `src/*` book directories.
-- Do not invent metadata the user did not provide.
+- Do not modify other `src/*` books; do not bulk-format README.
+- Do not invent metadata (author, publisher, URLs) the page/user did not provide.
 - Do not add build tools, package files, or CI for this repository.
-- Do not run outside `/Users/tomshine/Code/github-shine/source-code`.
-- If the requested category heading does not exist, ask whether to create it and where.
-- If cover extension is unsupported by Markdown preview, keep the file but mention it; prefer `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`.
+- Prefer `.jpg/.jpeg/.png/.webp/.gif` covers; unsupported extension → keep the file but mention it.
+- Douban fetch/cover download fails after one retry with UA+Referer → fall back to Mode B; ask the user for the cover file.
 
-## Response format
+## Report
 
-After editing, report only:
-
-- Added code directory
-- Added cover file
-- Updated README category
-- Any skipped optional metadata
+After editing, report only: added code dir, cover file, README category, Douban link (if any), skipped optional metadata.

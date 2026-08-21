@@ -438,6 +438,10 @@
 
   <img src="./images/Happy-LLM：从零开始构建大模型.jpg" width="300"/>
 
+- [《SDD实战：规范驱动开发之道》](./src/SDD实战：规范驱动开发之道)
+
+  <img src="./images/SDD实战：规范驱动开发之道.webp" width="300"/>
+
 ### 深度学习
 
 - [《深度学习入门：基于 Python 的理论与实现》](./src/deep-learning-intro-python/)
